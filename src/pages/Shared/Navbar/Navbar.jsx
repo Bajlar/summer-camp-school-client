@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const navItems = (
     <>
-      <div className='md:flex justify-center items-center'>
+      <div className="md:flex justify-center items-center">
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -20,7 +20,7 @@ const Navbar = () => {
           <Link to="/dashboard">Dashboard</Link>
         </li>
         <li>
-          <Link to="">
+          <Link to="/login">
             <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0">
               Login
             </button>

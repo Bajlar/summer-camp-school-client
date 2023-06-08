@@ -255,6 +255,6 @@ Show all approved classes on this page. Each Class will have the following:
 // The greatest joys of life aren't gifted; they're earned.
 
 // button
-<button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize">
+<button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-2">
   back to home
 </button>;

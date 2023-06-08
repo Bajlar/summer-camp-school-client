@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-wrap">
           <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 mb-4 sm:mb-0">
             <h4 className="text-lg font-bold">Future Force Cricket Academy</h4>
-            <img src={brandLogo} alt="" />
+            <img src={brandLogo} className='rounded-2xl' alt="" />
             <p className="mt-2 text-sm">
               Train with the best, become the best!
             </p>
