@@ -8,7 +8,7 @@ const Error = () => {
       <img src={error} alt="" />
       <div className="text-center -mt-5">
         <Link to="/">
-          <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize">
+          <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0">
             back to home
           </button>
         </Link>

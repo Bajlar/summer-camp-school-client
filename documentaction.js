@@ -2,7 +2,7 @@
 
 // ## **Theme: Summer Camp Learning School** :school:
 
-You are asked to build a website for a summer camp school that allows students to enroll and learn specific extra-curricular activities discussed in the requirements. The website must be exclusively dedicated to one type of school **(Music School, Music Instrument Learning School, Dance Learning School, Art & craft School, Foreign Language Learning School, Drama/Theatre school, Sports academies, Drawing School, Design school, Photography School, Culinary School, Magic/Illusion School, Martial Art, Fashion Design, Film School, News Presenter School, Radio Jockey, weight loss school, Yoga and meditation school, Makeup and cosmetology School, etc.)**. Your website will be based on one of the categories mentioned above. If you choose, for example, the category photography school, your website should have all the information and activities based on photography only. 
+// You are asked to build a website for a summer camp school that allows students to enroll and learn specific extra-curricular activities discussed in the requirements. The website must be exclusively dedicated to one type of school **(Music School, Music Instrument Learning School, Dance Learning School, Art & craft School, Foreign Language Learning School, Drama/Theatre school, Sports academies, Drawing School, Design school, Photography School, Culinary School, Magic/Illusion School, Martial Art, Fashion Design, Film School, News Presenter School, Radio Jockey, weight loss school, Yoga and meditation school, Makeup and cosmetology School, etc.)**. Your website will be based on one of the categories mentioned above. If you choose, for example, the category photography school, your website should have all the information and activities based on photography only. 
 
 // > **Note: You can not do anything related to coding School, like web development, app development, robotics, etc. programming related school.**
 
@@ -35,10 +35,10 @@ You are asked to build a website for a summer camp school that allows students t
 
     // **If any similarities are found, you will get zero(0) as a penalty.**
 
-2. Make sure to keep the navbar and footer **on all the pages except on the 404 page**. Create a good, stylish, and meaningful footer. (including website logo or name or both, copyright, some contact information, Address etc.)
+// 2. Make sure to keep the navbar and footer **on all the pages except on the 404 page**. Create a good, stylish, and meaningful footer. (including website logo or name or both, copyright, some contact information, Address etc.)
 
 
-3. Your website should have a navbar with the **Website logo or Website name, Home, Instructors,  Classes, Dashboard** and **User profile picture**\. The **user profile picture** and **Dashboard** on the navbar are conditional\. If the user is signed in, the navbar will show the profile picture; otherwise, it will show the **Login button**\.
+// 3. Your website should have a navbar with the **Website logo or Website name, Home, Instructors,  Classes, Dashboard** and **User profile picture**\. The **user profile picture** and **Dashboard** on the navbar are conditional\. If the user is signed in, the navbar will show the profile picture; otherwise, it will show the **Login button**\.
 
 
 4. **Registration & Login System:**
@@ -61,9 +61,9 @@ You are asked to build a website for a summer camp school that allows students t
     - (optional) Phone Number
     - (optional) Address
 
-    >**Note:** Keep at least one social login
+    // >**Note:** Keep at least one social login
 
-    >**Note:** Do not enforce **forget password feature** and  the **email verification method**, as it will inconvenience the examiner. If you want, you can add email verification/forget the password after receiving the assignment result.
+    // >**Note:** Do not enforce **forget password feature** and  the **email verification method**, as it will inconvenience the examiner. If you want, you can add email verification/forget the password after receiving the assignment result.
 
     **Error for Registration system:**
     On the Registration page, display errors when:
@@ -175,26 +175,26 @@ Show all approved classes on this page. Each Class will have the following:
 
 1. Minimum 20 meaningful git commits on the client-side repository and 12 meaningful commits on the server-side repository. Feel free to commit as many as needed to save your progress during load-shedding.
 
-2. Create a readme for the client-side and write about your project.
+// 2. Create a readme for the client-side and write about your project.
 
-    - Website name or logo or both
-    - Minimum 5 points of your website features
-    - Used packages/ technology name
-    - Live site link
+//     - Website name or logo or both
+//     - Minimum 5 points of your website features
+//     - Used packages/ technology name
+//     - Live site link
 
 3. Implementing a dark/light theme toggle for the home page. It's optional to implement the theme toggle for the entire website\.
 
-4. Make the home page responsive. If possible, Make your entire website responsive\. (It is ok if the table is not responsive\.)
+// 4. Make the home page responsive. If possible, Make your entire website responsive\. (It is ok if the table is not responsive\.)
 
 5. Use tanstack query (react-query) in at least two places. If needed, you can use it everywhere.
 
 6. use Axios for at least two calls.
 
-7.  Must Use [react-hook-form](https://react-hook-form.com/) in the registration & login page. Using react hook form in another place is optional.
+// 7.  Must Use [react-hook-form](https://react-hook-form.com/) in the registration & login page. Using react hook form in another place is optional.
 
-8. Use the Environment variables both on the client side & server side\.
+// 8. Use the Environment variables both on the client side & server side\.
 
-9. Implement  JWT token for Login and Registration systems (Email/ password & social login)\. You will send the token for the Dashboard routes and verify the user\.
+// 9. Implement  JWT token for Login and Registration systems (Email/ password & social login)\. You will send the token for the Dashboard routes and verify the user\.
 
 // 10. Create a 404 page\. Add any interesting image/ animation & a back-to-home button on the 404 page\. **Do not add header & footer in this page**\.
 
