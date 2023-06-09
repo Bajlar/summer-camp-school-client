@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import { FaGoogle} from "react-icons/fa";
 import { useForm } from "react-hook-form";
+import Swal from 'sweetalert2';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const SignUp = () => {
+  const { createUser, updateUserProfile } = useContext(AuthContext);
+  console.log(createUser, updateUserProfile);
 
   const {
     register,
@@ -12,9 +16,40 @@ const SignUp = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
+    createUser(data.email, data.password).then((result) => {
+      const loggedUser = result.user;
+      console.log(loggedUser);
+      updateUserProfile(data.name, data.photo)
+        .then(() => {
+          const saveUser = { name: data.name, email: data.email };
+          fetch("https://recap-bistro-boss-server.vercel.app/users", {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify(saveUser),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              // console.log(data);
+              if (data.insertedId) {
+                Swal.fire({
+                  position: "center",
+                  icon: "success",
+                  title: "User created successfully.",
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+              }
+            });
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    });
   };
 
-  console.log(errors);  
+  console.log(errors);
 
   // if (password !== confirm) {
   //   setError("Your password did not match");
@@ -23,7 +58,7 @@ const SignUp = () => {
   //   setError("password must be 6 characters or longer");
   //   return;
   // }
- 
+
   return (
     <div className="mt-4">
       <div className="hero min-h-screen bg-base-100">

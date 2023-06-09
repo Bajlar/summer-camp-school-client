@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGoogle, FaEye, FaEyeSlash } from "react-icons/fa";
 import { useForm } from "react-hook-form";
+import { AuthContext } from '../../providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
+
+  const { signIn } = useContext(AuthContext);
+  console.log(signIn);
 
   const {
     register,
@@ -14,7 +19,21 @@ const Login = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    reset();
+    signIn(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "User login successfully",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   const togglePasswordVisibility = () => {
