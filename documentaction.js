@@ -41,14 +41,14 @@
 // 3. Your website should have a navbar with the **Website logo or Website name, Home, Instructors,  Classes, Dashboard** and **User profile picture**\. The **user profile picture** and **Dashboard** on the navbar are conditional\. If the user is signed in, the navbar will show the profile picture; otherwise, it will show the **Login button**\.
 
 
-4. **Registration & Login System:**
+// 4. **Registration & Login System:**
 
-    **Login Page:**
-    When a user clicks on the login button, they will be redirected to the login page having the following:
-    - Email
-    - Password **(This field can hide/unhide the password by clicking on an icon)**
-    - A link that will redirect to the registration page
-    - Keep at least one social login
+//     **Login Page:**
+//     When a user clicks on the login button, they will be redirected to the login page having the following:
+//     - Email
+//     - Password **(This field can hide/unhide the password by clicking on an icon)**
+//     - A link that will redirect to the registration page
+//     - Keep at least one social login
 
     **Registration Page:**
     The Registration page will have the Email/Password form having the following fields:
@@ -65,15 +65,15 @@
 
     // >**Note:** Do not enforce **forget password feature** and  the **email verification method**, as it will inconvenience the examiner. If you want, you can add email verification/forget the password after receiving the assignment result.
 
-    **Error for Registration system:**
-    On the Registration page, display errors when:
+    // **Error for Registration system:**
+    // On the Registration page, display errors when:
 
-    The password
-    - is less than 6 characters
-    - don't have a capital letter
-    - don't have a special character
+    // The password
+    // - is less than 6 characters
+    // - don't have a capital letter
+    // - don't have a special character
 
-    >**Note:** A user cannot submit empty email and password fields.
+    // >**Note:** A user cannot submit empty email and password fields.
 
 5. **Homepage:**
 
