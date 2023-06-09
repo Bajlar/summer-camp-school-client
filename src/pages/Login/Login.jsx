@@ -26,7 +26,7 @@ const Login = () => {
   };
 
   return (
-    <div className="mt-12">
+    <div className="mt-4">
       <div className="hero min-h-screen bg-base-100">
         <div className="hero-content flex-col md:w-4/12 mx-auto">
           <div className="text-center">
@@ -36,7 +36,9 @@ const Login = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text text-lg font-semibold">
+                    Email
+                  </span>
                 </label>
                 <input
                   type="text"
@@ -45,9 +47,11 @@ const Login = () => {
                   className="input"
                 />
               </div>
-              <div className="form-control w-full">
+              <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text text-lg font-semibold">
+                    Password
+                  </span>
                 </label>
                 <div className="relative">
                   <input

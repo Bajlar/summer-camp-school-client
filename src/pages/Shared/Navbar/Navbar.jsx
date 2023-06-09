@@ -26,6 +26,13 @@ const Navbar = () => {
             </button>
           </Link>
         </li>
+        <li>
+          <Link to="/signUp">
+            <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0">
+              Sign Up
+            </button>
+          </Link>
+        </li>
       </div>
     </>
   );
