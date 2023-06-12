@@ -1,109 +1,109 @@
 [
   {
     "_id": "642c155b2c4774f05c36ee7",
-    "image": "instructor1.jpg",
+    "image": "https://i.ibb.co/qdDMfsV/John-Smith1.webp",
     "name": "John Smith",
     "email": "johnsmith@example.com"
   },
   {
     "_id": "642c155b22c4774f05c36ee7",
-    "image": "instructor2.jpg",
+    "image": "https://i.ibb.co/mR4rz2G/Sarah-Johnson-2.jpg",
     "name": "Sarah Johnson",
     "email": "sarahjohnson@example.com"
   },
   {
     "_id": "642c1533b2c4774f05c36ee7",
-    "image": "instructor3.jpg",
+    "image": "https://i.ibb.co/7zWG89c/Michael-Brown3.jpg",
     "name": "Michael Brown",
     "email": "michaelbrown@example.com"
   },
   {
     "_id": "64w2c155b2c4774f05c36ee7f",
-    "image": "instructor4.jpg",
+    "image": "https://i.ibb.co/LdSyK5Q/Dav-id-Wilson4.png",
     "name": "Dav_id Wilson",
     "email": "dav_idwilson@example.com"
   },
   {
     "_id": "642c1555b2c4774f05c36ee4",
-    "image": "instructor5.jpg",
+    "image": "https://i.ibb.co/H7x1Ssw/Emma-Thompson.jpg",
     "name": "Emma Thompson",
     "email": "emmathompson@example.com"
   },
   {
     "_id": "642c155b233c4774f05c36ee7",
-    "image": "instructor6.jpg",
+    "image": "https://i.ibb.co/BPph0m1/Robert-Davis.jpg",
     "name": "Robert Davis",
     "email": "robertdavis@example.com"
   },
   {
     "_id": "642c155b22c4774f05c36e3re7",
-    "image": "instructor7.jpg",
+    "image": "https://i.ibb.co/Q6Dkt3D/Jennifer-Lee.jpg",
     "name": "Jennifer Lee",
     "email": "jenniferlee@example.com"
   },
   {
     "_id": "642c1552b2c4774f05c36ee7",
-    "image": "instructor8.jpg",
+    "image": "https://i.ibb.co/CJ7LYTv/Andrew-Mitchell.jpg",
     "name": "Andrew Mitchell",
     "email": "andrewmitchell@example.com"
   },
   {
     "_id": "642c1455b2c4774f05c36ee7r",
-    "image": "instructor9.jpg",
+    "image": "https://i.ibb.co/jZN2Sf3/Laura-Anderson.jpg",
     "name": "Laura Anderson",
     "email": "lauraanderson@example.com"
   },
   {
     "_id": "642c155b2c4774rrf05c36ee7e",
-    "image": "instructor10.jpg",
+    "image": "https://i.ibb.co/vDjzS7D/Mark-Roberts.jpg",
     "name": "Mark Roberts",
     "email": "markroberts@example.com"
   },
   {
     "_id": "642c155b2c4774f05rwc36ee",
-    "image": "instructor11.jpg",
+    "image": "https://i.ibb.co/sF6rSrV/Michelle-Adams.jpg",
     "name": "Michelle Adams",
     "email": "michelleadams@example.com"
   },
   {
     "_id": "642c155b2c4774f05c36",
-    "image": "instructor12.jpg",
+    "image": "https://i.ibb.co/yYj3Ccx/Daniel-Thomas.jpg",
     "name": "Daniel Thomas",
     "email": "danielthomas@example.com"
   },
   {
     "_id": "642c155b2c4774f05c3yu",
-    "image": "instructor13.jpg",
+    "image": "https://i.ibb.co/b5gKM2f/Sophie-Brown.jpg",
     "name": "Sophie Brown",
     "email": "sophiebrown@example.com"
   },
   {
     "_id": "642c155b2c4774f05c36ee86",
-    "image": "instructor14.jpg",
+    "image": "https://i.ibb.co/rpQBj3r/George-Evans.jpg",
     "name": "George Evans",
     "email": "georgeevans@example.com"
   },
   {
     "_id": "642c155b2c44r774f05c36ee7",
-    "image": "instructor15.jpg",
+    "image": "https://i.ibb.co/CwK2VcV/Olivia-Turner.jpg",
     "name": "Olivia Turner",
     "email": "oliviaturner@example.com"
   },
   {
     "_id": "642c155b2c4774f05c36e89w",
-    "image": "instructor16.jpg",
+    "image": "https://i.ibb.co/gSW3Pvb/William-Clark.jpg",
     "name": "William Clark",
     "email": "williamclark@example.com"
   },
   {
     "_id": "642c155b2c4774f05c36ee21q",
-    "image": "instructor17.jpg",
+    "image": "https://i.ibb.co/pLFfWmb/Sophia-Allen.jpg",
     "name": "Sophia Allen",
     "email": "sophiaallen@example.com"
   },
   {
     "_id": "642c155b2c4774f05c36ee1de",
-    "image": "instructor18.jpg",
+    "image": "https://i.ibb.co/VSk173f/Matthew-Turner.jpg",
     "name": "Matthew Turner",
     "email": "matthewturner@example.com"
   }
