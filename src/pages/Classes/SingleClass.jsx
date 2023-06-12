@@ -5,9 +5,9 @@ const SingleClass = ({ classes }) => {
   const { className, image, instructorName, price, availableSeats } = classes;
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card bg-base-100 shadow-xl">
       <figure className="px-10 pt-10">
-        <img src={image} alt="" className="rounded-xl" />
+        <img src={image} alt="" className="h-64 rounded-xl" />
       </figure>
       <div className="card-body items-center text-center">
         <h2 className="card-title">Class Name: {className}</h2>
