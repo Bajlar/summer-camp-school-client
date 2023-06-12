@@ -85,26 +85,26 @@
     
     - **Extra Section -** Add one relevant sections. Make it attractive :heart_eyes:. Try to use animation effects.
 
-6. **Instructors Page:**
-Display all the instructors. Each Instructor will be:
-   - Image
-   - Name
-   - Email
-   - (optional) Number of Classes taken by the Instructor. 
-   - (optional) Name of the Classes taken by the Instructor. 
-   - (optional) `See Classes` button to show classes by this Instructor. This will take you to a new link
+// 6. **Instructors Page:**
+// Display all the instructors. Each Instructor will be:
+//    - Image
+//    - Name
+//    - Email
+//    - (optional) Number of Classes taken by the Instructor. 
+//    - (optional) Name of the Classes taken by the Instructor. 
+//    - (optional) `See Classes` button to show classes by this Instructor. This will take you to a new link
 
-7. **Classes page:**
-Show all approved classes on this page. Each Class will have the following:
-   - Image
-   - Name
-   - Instructor name
-   - Available seats
-   - Price
-   - Select Button. If the user is not logged in, then tell the user to log in before selecting the course. This button will be disabled if:
-        - Available seats are 0
-        - Logged in as admin/instructor
-    - The class card background will be red if the available seats are 0.
+// 7. **Classes page:**
+// Show all approved classes on this page. Each Class will have the following:
+//    - Image
+//    - Name
+//    - Instructor name
+//    - Available seats
+//    - Price
+//    - Select Button. If the user is not logged in, then tell the user to log in before selecting the course. This button will be disabled if:
+//         - Available seats are 0
+//         - Logged in as admin/instructor
+//     - The class card background will be red if the available seats are 0.
 
 8.  **Student Dashboard:**
     <br/>
@@ -171,7 +171,7 @@ Show all approved classes on this page. Each Class will have the following:
     - [React-spring](https://www.react-spring.dev/)
     - [React-anime](https://github.com/juliangarnier/anime)
 
-## :writing_hand: **Bonus Task:**
+// ## :writing_hand: **Bonus Task:**
 
 1. Minimum 20 meaningful git commits on the client-side repository and 12 meaningful commits on the server-side repository. Feel free to commit as many as needed to save your progress during load-shedding.
 
@@ -257,4 +257,4 @@ Show all approved classes on this page. Each Class will have the following:
 // button
 <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-2">
   back to home
-</button>;
+</button>
