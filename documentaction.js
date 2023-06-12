@@ -50,16 +50,16 @@
 //     - A link that will redirect to the registration page
 //     - Keep at least one social login
 
-    **Registration Page:**
-    The Registration page will have the Email/Password form having the following fields:
-    - Name
-    - Email
-    - Password
-    - Confirm Password
-    - Photo URL
-    - (optional) Gender
-    - (optional) Phone Number
-    - (optional) Address
+    // **Registration Page:**
+    // The Registration page will have the Email/Password form having the following fields:
+    // - Name
+    // - Email
+    // - Password
+    // - Confirm Password
+    // - Photo URL
+    // - (optional) Gender
+    // - (optional) Phone Number
+    // - (optional) Address
 
     // >**Note:** Keep at least one social login
 
@@ -77,7 +77,7 @@
 
 5. **Homepage:**
 
-    - **Top Slider Section -** Will have a relevant slider. Use relevant text, information, message, and picture. The design is entirely up to you.
+    // - **Top Slider Section -** Will have a relevant slider. Use relevant text, information, message, and picture. The design is entirely up to you.
 
     - **Popular Classes Section -** Show relevant pictures related to the classes or activities. Have the top 6 classes based on the number of students.
 

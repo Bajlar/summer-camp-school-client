@@ -1,16 +1,16 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaGoogle, FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash} from "react-icons/fa";
 import { useForm } from "react-hook-form";
-import { AuthContext } from '../../providers/AuthProvider';
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
+import SocialLogin from '../../components/SocialLogin';
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
 
-  const { signIn } = useContext(AuthContext);
-  console.log(signIn);
+  // const { signIn } = useContext(AuthContext);
+  // console.log(signIn);
 
   const {
     register,
@@ -19,21 +19,21 @@ const Login = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    signIn(email, password)
-      .then((result) => {
-        const user = result.user;
-        console.log(user);
-        Swal.fire({
-          position: "center",
-          icon: "success",
-          title: "User login successfully",
-          showConfirmButton: false,
-          timer: 1500,
-        });
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    // signIn(email, password)
+    //   .then((result) => {
+    //     const user = result.user;
+    //     console.log(user);
+    //     Swal.fire({
+    //       position: "center",
+    //       icon: "success",
+    //       title: "User login successfully",
+    //       showConfirmButton: false,
+    //       timer: 1500,
+    //     });
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
   };
 
   const togglePasswordVisibility = () => {
@@ -102,14 +102,7 @@ const Login = () => {
             </form>
             <div className="text-center -mt-5">
               <p className="text-lg font-medium">Or sign in with</p>
-              <div className="pb-5 mt-4">
-                <button
-                  className="btn bg-[#04AA6D]
-                  hover:bg-[#04AA6D] text-white"
-                >
-                  <FaGoogle className="text-2xl"></FaGoogle>
-                </button>
-              </div>
+              <SocialLogin></SocialLogin>
             </div>
           </div>
         </div>

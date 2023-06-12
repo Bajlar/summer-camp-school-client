@@ -1,13 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
-import { FaGoogle} from "react-icons/fa";
 import { useForm } from "react-hook-form";
-import Swal from 'sweetalert2';
-import { AuthContext } from '../../providers/AuthProvider';
+import SocialLogin from '../../components/SocialLogin';
 
 const SignUp = () => {
-  const { createUser, updateUserProfile } = useContext(AuthContext);
-  console.log(createUser, updateUserProfile);
 
   const {
     register,
@@ -16,40 +12,40 @@ const SignUp = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    createUser(data.email, data.password).then((result) => {
-      const loggedUser = result.user;
-      console.log(loggedUser);
-      updateUserProfile(data.name, data.photo)
-        .then(() => {
-          const saveUser = { name: data.name, email: data.email };
-          fetch("https://recap-bistro-boss-server.vercel.app/users", {
-            method: "POST",
-            headers: {
-              "content-type": "application/json",
-            },
-            body: JSON.stringify(saveUser),
-          })
-            .then((res) => res.json())
-            .then((data) => {
-              // console.log(data);
-              if (data.insertedId) {
-                Swal.fire({
-                  position: "center",
-                  icon: "success",
-                  title: "User created successfully.",
-                  showConfirmButton: false,
-                  timer: 1500,
-                });
-              }
-            });
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    });
+    // createUser(data.email, data.password).then((result) => {
+    //   const loggedUser = result.user;
+    //   console.log(loggedUser);
+    //   updateUserProfile(data.name, data.photo)
+    //     .then(() => {
+    //       const saveUser = { name: data.name, email: data.email };
+    //       fetch("https://recap-bistro-boss-server.vercel.app/users", {
+    //         method: "POST",
+    //         headers: {
+    //           "content-type": "application/json",
+    //         },
+    //         body: JSON.stringify(saveUser),
+    //       })
+    //         .then((res) => res.json())
+    //         .then((data) => {
+    //           // console.log(data);
+    //           if (data.insertedId) {
+    //             Swal.fire({
+    //               position: "center",
+    //               icon: "success",
+    //               title: "User created successfully.",
+    //               showConfirmButton: false,
+    //               timer: 1500,
+    //             });
+    //           }
+    //         });
+    //     })
+    //     .catch((error) => {
+    //       console.log(error);
+    //     });
+    // });
   };
 
-  console.log(errors);
+  // console.log(errors);
 
   // if (password !== confirm) {
   //   setError("Your password did not match");
@@ -181,14 +177,7 @@ const SignUp = () => {
             </form>
             <div className="text-center -mt-5">
               <p className="text-lg font-medium">Or sign in with</p>
-              <div className="pb-5 mt-4">
-                <button
-                  className="btn bg-[#04AA6D]
-                  hover:bg-[#04AA6D] text-white"
-                >
-                  <FaGoogle className="text-2xl"></FaGoogle>
-                </button>
-              </div>
+              <SocialLogin></SocialLogin>
             </div>
           </div>
         </div>

@@ -1,0 +1,164 @@
+[
+  {
+    "_id": "642c155b2c4774f05c36eeaa",
+    "image": "https://i.ibb.co/s2ff4c0/images-1.jpg",
+    "className": "Beginner's Batting Class",
+    "instructorName": "John Smith",
+    "availableSeats": 10,
+    "price": "$50",
+    "category": "general"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb9",
+    "image": "https://i.ibb.co/f1sMHky/spin.jpg",
+    "className": "Advanced Spin Bowling Class",
+    "instructorName": "Sarah Johnson",
+    "availableSeats": 8,
+    "price": "$80",
+    "category": "general"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee7c",
+    "image": "https://i.ibb.co/Sdm0325/89744529.webp",
+    "className": "Junior All-Rounders Training",
+    "instructorName": "Michael Brown",
+    "availableSeats": 12,
+    "price": "$60",
+    "category": "general"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee88",
+    "image": "https://i.ibb.co/gytCNTj/wicket-kipper.jpg",
+    "className": "Wicketkeeping Masterclass",
+    "instructorName": "David Wilson",
+    "availableSeats": 5,
+    "price": "$70",
+    "category": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee7a",
+    "image": "https://i.ibb.co/jD4XP92/women.webp",
+    "className": "Women's Cricket Development Program",
+    "instructorName": "Emma Thompson",
+    "availableSeats": 15,
+    "price": "$90",
+    "category": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee8c",
+    "image": "https://i.ibb.co/6vgV5Gy/space-boler.jpg",
+    "className": "Fast Bowling Intensive Training",
+    "instructorName": "Robert Davis",
+    "availableSeats": 6,
+    "price": "$75",
+    "category": "general"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee94",
+    "image": "https://i.ibb.co/dcCnFY7/cricket-batting-techniques-backlift.webp",
+    "className": "Batting Technique Enhancement Camp",
+    "instructorName": "Jennifer Lee",
+    "availableSeats": 10,
+    "price": "$55",
+    "category": "general"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee9e",
+    "image": "https://i.ibb.co/7KJksR7/download-4.jpg",
+    "className": "Youth Cricket Summer Camp",
+    "instructorName": "Andrew Mitchell",
+    "availableSeats": 20,
+    "price": "$120",
+    "category": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eea6",
+    "image": "https://i.ibb.co/S7ZwRwH/gettyimages-1253063514-612x612.jpg",
+    "className": "Batting class",
+    "instructorName": "Laura Anderson",
+    "availableSeats": 7,
+    "price": "$85",
+    "category": "general"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeaf",
+    "image": "https://i.ibb.co/sg8T2Gm/ndore.jpg",
+    "className": "Indoor Cricket League",
+    "instructorName": "Mark Roberts",
+    "availableSeats": 8,
+    "price": "$40",
+    "category": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee89",
+    "image": "https://i.ibb.co/WGB41bt/2519284-9828-3.jpg",
+    "className": "Cricket Fitness Bootcamp",
+    "instructorName": "Michelle Adams",
+    "availableSeats": 10,
+    "price": "$65",
+    "category": "general"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee8a",
+    "image": "https://i.ibb.co/WWmfdZg/902edf2aef204030ba87a293eae793c8.jpg",
+    "className": "Specialized Fielding Techniques Workshop",
+    "instructorName": "Daniel Thomas",
+    "availableSeats": 5,
+    "price": "$70",
+    "category": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee96",
+    "image": "https://i.ibb.co/T8Dq88T/t-20.webp",
+    "className": "T20 Match Strategies Masterclass",
+    "instructorName": "Sophie Brown",
+    "availableSeats": 12,
+    "price": "$90",
+    "category": "general"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee81",
+    "image": "https://i.ibb.co/VvmWJfk/Umpire1-min.png",
+    "className": "Cricket Umpiring and Scoring Course",
+    "instructorName": "George Evans",
+    "availableSeats": 10,
+    "price": "$55",
+    "category": "general"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee84",
+    "image": "https://i.ibb.co/7ngs5yJ/1106328-image-1463652369.jpg",
+    "className": "Cricket Psychology and Mental Skills Workshop",
+    "instructorName": "Olivia Turner",
+    "availableSeats": 6,
+    "price": "$80",
+    "category": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eea4",
+    "image": "https://i.ibb.co/85gPJ7T/leg-spin.jpg",
+    "className": "Leg spin bolling class",
+    "instructorName": "William Clark",
+    "availableSeats": 15,
+    "price": "$100",
+    "category": "general"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eea5",
+    "image": "https://i.ibb.co/dM7xNFS/batting-skills.jpg",
+    "className": "Batting skills",
+    "instructorName": "Sophia Allen",
+    "availableSeats": 10,
+    "price": "$60",
+    "category": "general"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee7f",
+    "image": "https://i.ibb.co/kHpyPft/fielding.jpg",
+    "className": "Best fielding class",
+    "instructorName": "Jacob Harris",
+    "availableSeats": 7,
+    "price": "$75",
+    "category": "general"
+  }
+]

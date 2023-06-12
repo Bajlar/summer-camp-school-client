@@ -7,16 +7,16 @@ const Navbar = () => {
   const navItems = (
     <>
       <div className="md:flex justify-center items-center">
-        <li>
+        <li className="hover:bg-gray-100 text-white font-medium rounded-lg">
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li className="hover:bg-gray-100 text-white font-medium rounded-lg">
           <Link to="/instructors">Instructors</Link>
         </li>
-        <li>
+        <li className="hover:bg-gray-100 text-white font-medium rounded-lg">
           <Link to="/classes">Classes</Link>
         </li>
-        <li>
+        <li className="hover:bg-gray-100 text-white font-medium rounded-lg">
           <Link to="/dashboard">Dashboard</Link>
         </li>
         <li>
@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar fixed top-0 z-10 bg-gray-400 bg-opacity-30 text-white px-12">
+      <div className="navbar fixed top-0 z-10 bg-gray-600 bg-opacity-30 text-white px-12">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
