@@ -3,108 +3,180 @@
     "_id": "642c155b2c4774f05c36ee7",
     "image": "https://i.ibb.co/qdDMfsV/John-Smith1.webp",
     "name": "John Smith",
-    "email": "johnsmith@example.com"
+    "email": "johnsmith@example.com",
+    "activities": 10,
+    "price": "$50",
+    "className": "Beginner's Batting Class",
+    "category": "general"
   },
   {
     "_id": "642c155b22c4774f05c36ee7",
     "image": "https://i.ibb.co/mR4rz2G/Sarah-Johnson-2.jpg",
     "name": "Sarah Johnson",
-    "email": "sarahjohnson@example.com"
+    "email": "sarahjohnson@example.com",
+    "activities": 8,
+    "price": "$80",
+    "className": "Advanced Spin Bowling Class",
+    "category": "general"
   },
   {
     "_id": "642c1533b2c4774f05c36ee7",
     "image": "https://i.ibb.co/7zWG89c/Michael-Brown3.jpg",
     "name": "Michael Brown",
-    "email": "michaelbrown@example.com"
+    "email": "michaelbrown@example.com",
+    "activities": 12,
+    "price": "$60",
+    "className": "Junior All-Rounders Training",
+    "category": "general"
   },
   {
     "_id": "64w2c155b2c4774f05c36ee7f",
     "image": "https://i.ibb.co/LdSyK5Q/Dav-id-Wilson4.png",
     "name": "Dav_id Wilson",
-    "email": "dav_idwilson@example.com"
+    "email": "dav_idwilson@example.com",
+    "activities": 25,
+    "price": "$70",
+    "className": "Wicketkeeping Masterclass",
+    "category": "popular"
   },
   {
     "_id": "642c1555b2c4774f05c36ee4",
     "image": "https://i.ibb.co/H7x1Ssw/Emma-Thompson.jpg",
     "name": "Emma Thompson",
-    "email": "emmathompson@example.com"
+    "email": "emmathompson@example.com",
+    "activities": 20,
+    "price": "$90",
+    "className": "Women's Cricket Development Program",
+    "category": "popular"
   },
   {
     "_id": "642c155b233c4774f05c36ee7",
     "image": "https://i.ibb.co/BPph0m1/Robert-Davis.jpg",
     "name": "Robert Davis",
-    "email": "robertdavis@example.com"
+    "email": "robertdavis@example.com",
+    "activities": 6,
+    "price": "$75",
+    "className": "Fast Bowling Intensive Training",
+    "category": "general"
   },
   {
     "_id": "642c155b22c4774f05c36e3re7",
     "image": "https://i.ibb.co/Q6Dkt3D/Jennifer-Lee.jpg",
     "name": "Jennifer Lee",
-    "email": "jenniferlee@example.com"
+    "email": "jenniferlee@example.com",
+    "activities": 10,
+    "price": "$55",
+    "className": "Batting Technique Enhancement Camp",
+    "category": "general"
   },
   {
     "_id": "642c1552b2c4774f05c36ee7",
     "image": "https://i.ibb.co/CJ7LYTv/Andrew-Mitchell.jpg",
     "name": "Andrew Mitchell",
-    "email": "andrewmitchell@example.com"
+    "email": "andrewmitchell@example.com",
+    "activities": 21,
+    "price": "$120",
+    "className": "Youth Cricket Summer Camp",
+    "category": "popular"
   },
   {
     "_id": "642c1455b2c4774f05c36ee7r",
     "image": "https://i.ibb.co/jZN2Sf3/Laura-Anderson.jpg",
     "name": "Laura Anderson",
-    "email": "lauraanderson@example.com"
+    "email": "lauraanderson@example.com",
+    "activities": 7,
+    "price": "$85",
+    "className": "Batting class",
+    "category": "general"
   },
   {
     "_id": "642c155b2c4774rrf05c36ee7e",
     "image": "https://i.ibb.co/vDjzS7D/Mark-Roberts.jpg",
     "name": "Mark Roberts",
-    "email": "markroberts@example.com"
+    "email": "markroberts@example.com",
+    "activities": 31,
+    "price": "$40",
+    "className": "Indoor Cricket League",
+    "category": "popular"
   },
   {
     "_id": "642c155b2c4774f05rwc36ee",
     "image": "https://i.ibb.co/sF6rSrV/Michelle-Adams.jpg",
     "name": "Michelle Adams",
-    "email": "michelleadams@example.com"
+    "email": "michelleadams@example.com",
+    "activities": 10,
+    "price": "$65",
+    "className": "Cricket Fitness Bootcamp",
+    "category": "general"
   },
   {
     "_id": "642c155b2c4774f05c36",
     "image": "https://i.ibb.co/yYj3Ccx/Daniel-Thomas.jpg",
     "name": "Daniel Thomas",
-    "email": "danielthomas@example.com"
+    "email": "danielthomas@example.com",
+    "activities": 27,
+    "price": "$70",
+    "className": "Specialized Fielding Techniques Workshop",
+    "category": "popular"
   },
   {
     "_id": "642c155b2c4774f05c3yu",
     "image": "https://i.ibb.co/b5gKM2f/Sophie-Brown.jpg",
     "name": "Sophie Brown",
-    "email": "sophiebrown@example.com"
+    "email": "sophiebrown@example.com",
+    "activities": 12,
+    "price": "$90",
+    "className": "T20 Match Strategies Masterclass",
+    "category": "general"  
   },
   {
     "_id": "642c155b2c4774f05c36ee86",
     "image": "https://i.ibb.co/rpQBj3r/George-Evans.jpg",
     "name": "George Evans",
-    "email": "georgeevans@example.com"
+    "email": "georgeevans@example.com",
+    "activities": 10,
+    "price": "$55",
+    "className": "Cricket Umpiring and Scoring Course",
+    "category": "general"
   },
   {
     "_id": "642c155b2c44r774f05c36ee7",
     "image": "https://i.ibb.co/CwK2VcV/Olivia-Turner.jpg",
     "name": "Olivia Turner",
-    "email": "oliviaturner@example.com"
+    "email": "oliviaturner@example.com",
+    "activities": 19,
+    "price": "$80",
+    "className": "Cricket Psychology and Mental Skills Workshop",
+    "category": "popular"
   },
   {
     "_id": "642c155b2c4774f05c36e89w",
     "image": "https://i.ibb.co/gSW3Pvb/William-Clark.jpg",
     "name": "William Clark",
-    "email": "williamclark@example.com"
+    "email": "williamclark@example.com",
+    "activities": 15,
+    "price": "$100",
+    "className": "Leg spin bolling class",
+    "category": "general"
   },
   {
     "_id": "642c155b2c4774f05c36ee21q",
     "image": "https://i.ibb.co/pLFfWmb/Sophia-Allen.jpg",
     "name": "Sophia Allen",
-    "email": "sophiaallen@example.com"
+    "email": "sophiaallen@example.com",
+    "activities": 10,
+    "price": "$60",
+    "className": "Batting skills",
+    "category": "general"
   },
   {
     "_id": "642c155b2c4774f05c36ee1de",
     "image": "https://i.ibb.co/VSk173f/Matthew-Turner.jpg",
     "name": "Matthew Turner",
-    "email": "matthewturner@example.com"
+    "email": "matthewturner@example.com",
+    "activities": 7,
+    "price": "$75",
+    "className": "Best fielding class",
+    "category": "general"
   }
 ]

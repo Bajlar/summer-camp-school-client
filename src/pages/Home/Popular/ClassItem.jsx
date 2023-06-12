@@ -14,8 +14,8 @@ const ClassItem = ({ item }) => {
         <p>Price: {price}</p>
         <p>Available Seats: {availableSeats}</p>
         <div className="card-actions">
-          <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-2">
-            Enroll Now
+          <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0">
+            Select
           </button>
         </div>
       </div>

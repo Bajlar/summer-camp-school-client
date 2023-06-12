@@ -8,19 +8,19 @@ const Popular = () => {
     fetch("classes.json")
       .then((res) => res.json())
       .then((data) => {
-        const popularItems = data.filter(item => item.category === 'popular')
+        const popularItems = data.filter((item) => item.category === "popular");
         // console.log(popularItems);
         setPopularClass(popularItems);
       });
   }, []);
 
-   return (
-     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-       {popularClass.map((item) => (
-         <ClassItem key={item._id} item={item}></ClassItem>
-       ))}
-     </div>
-   );
+  return (
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {popularClass.map((item) => (
+        <ClassItem key={item._id} item={item}></ClassItem>
+      ))}
+    </div>
+  );
 };
 
 export default Popular;

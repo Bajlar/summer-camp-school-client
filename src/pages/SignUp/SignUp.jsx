@@ -166,7 +166,7 @@ const SignUp = () => {
               <div className="form-control mt-6">
                 <input
                   className="btn text-lg text-white bg-[#04AA6D]
-                  hover:bg-[#04AA6D] capitalize border-2"
+                  hover:bg-[#04AA6D] capitalize border-0"
                   type="submit"
                   value="Sign Up"
                 />

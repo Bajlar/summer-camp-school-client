@@ -79,7 +79,7 @@
 
     // - **Top Slider Section -** Will have a relevant slider. Use relevant text, information, message, and picture. The design is entirely up to you.
 
-    - **Popular Classes Section -** Show relevant pictures related to the classes or activities. Have the top 6 classes based on the number of students.
+    // - **Popular Classes Section -** Show relevant pictures related to the classes or activities. Have the top 6 classes based on the number of students.
 
     - **Popular Instructors Section -** Show relevant pictures related to the classes or activities. Show the top 6 instructors based on the number of students in their Class. However, selecting top instructors based on the number of students is optional, but you must show 6 instructors.
     
@@ -255,6 +255,6 @@
 // The greatest joys of life aren't gifted; they're earned.
 
 // button
-<button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-2">
+<button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0">
   back to home
 </button>
