@@ -4,6 +4,7 @@ import { FaEye, FaEyeSlash} from "react-icons/fa";
 import { useForm } from "react-hook-form";
 // import Swal from 'sweetalert2';
 import SocialLogin from '../../components/SocialLogin';
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -46,6 +47,9 @@ const Login = () => {
 
   return (
     <div className="mt-4">
+      <Helmet>
+        <title>Cricket academy | Login</title>
+      </Helmet>
       <div className="hero min-h-screen bg-base-100">
         <div className="hero-content flex-col md:w-4/12 mx-auto">
           <div className="text-center">

@@ -4,10 +4,14 @@ import Popular from '../Popular/Popular';
 import SectionTitle from '../../../components/SectionTitle';
 import PopularInstructors from '../PopularInstructors/PopularInstructors';
 import Feature from '../Feature/Feature';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Cricket academy | Home</title>
+      </Helmet>
       <Banner></Banner>
       <div className="max-w-6xl mx-auto my-5">
         <section className="mb-4">

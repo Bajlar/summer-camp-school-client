@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import SocialLogin from '../../components/SocialLogin';
+import { Helmet } from 'react-helmet-async';
 
 const SignUp = () => {
 
@@ -57,6 +58,9 @@ const SignUp = () => {
 
   return (
     <div className="mt-4">
+      <Helmet>
+        <title>Cricket academy | Sign Up</title>
+      </Helmet>
       <div className="hero min-h-screen bg-base-100">
         <div className="hero-content flex-col md:w-4/12 mx-auto">
           <div className="text-center">

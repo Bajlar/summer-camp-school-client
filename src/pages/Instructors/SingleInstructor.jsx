@@ -14,7 +14,7 @@ const SingleInstructor = ({ instructor }) => {
         <p>Email: {email}</p>
         <div className="card-actions">
           <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0">
-            Details
+            See Classes
           </button>
         </div>
       </div>
