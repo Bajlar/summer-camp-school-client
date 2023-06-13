@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import SingleInstructor from './SingleInstructor';
 import { Helmet } from 'react-helmet-async';
+import useInstructors from '../../hooks/UseInstructors';
 
 const Instructors = () => {
-  const [instructors, setInstructors] = useState([]);
-
-  useEffect(() => {
-    fetch("instructors.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setInstructors(data);;
-      });
-  }, []);
+  const [instructors] = useInstructors();
+  // console.log(instructors);
 
   return (
     <div className="max-w-6xl mx-auto my-14 pt-12">

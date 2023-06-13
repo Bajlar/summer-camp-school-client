@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import SingleClass from './SingleClass';
 import { Helmet } from 'react-helmet-async';
+import useClasses from '../../hooks/UseClasses';
 
 const Classes = () => {
-  const [classes, setClasses] = useState([]);
-
-  useEffect(() => {
-    fetch("classes.json")
-      .then(res => res.json())
-      .then(data => {
-        setClasses(data);
-      })
-  }, [])
+  const [classes] = useClasses();
+  // console.log(classes);
 
   return (
     <div className="max-w-6xl mx-auto my-14 pt-12">
