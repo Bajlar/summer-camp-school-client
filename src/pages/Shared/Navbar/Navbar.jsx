@@ -34,7 +34,13 @@ const Navbar = () => {
         <div>
           {user ? (
             <div className="flex justify-center items-center gap-4">
+              {/* <p className="text-lg">{user?.displayName}</p> */}
               <p className="text-lg">{user?.email}</p>
+              <div className="avatar placeholder">
+                <div className="text-neutral-content rounded-full w-12">
+                  <img src={user?.photoURL} alt="" />
+                </div>
+              </div>
               <button
                 onClick={handleSignOut}
                 className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0"

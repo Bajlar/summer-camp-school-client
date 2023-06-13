@@ -1,24 +1,26 @@
-import React, { useContext } from 'react';
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import SocialLogin from '../../components/SocialLogin';
-import { Helmet } from 'react-helmet-async';
-import Swal from 'sweetalert2';
-import { AuthContext } from '../../providers/AuthProvider';
+import SocialLogin from "../../components/SocialLogin";
+import { Helmet } from "react-helmet-async";
+import Swal from "sweetalert2";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const SignUp = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, updateUserProfile } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     if (data.password !== data.confirm) {
       Swal.fire({
-        position: "top-center",
+        position: "center",
         icon: "error",
         title: "Passwords don't match!",
         showConfirmButton: false,
@@ -27,13 +29,24 @@ const SignUp = () => {
       return;
     }
     createUser(data.email, data.password)
-      .then(result => {
+      .then((result) => {
         const loggedUser = result.user;
-        console.log(loggedUser);
+        // console.log(loggedUser);
+        updateUserProfile(data.name, data.photo).then(() => {
+          reset();
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "User Create successfully",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          navigate('/')
+        });
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
-      })
+      });
 
     // createUser(data.email, data.password).then((result) => {
     //   const loggedUser = result.user;
@@ -88,8 +101,7 @@ const SignUp = () => {
                 </label>
                 <input
                   type="text"
-                  name="name"
-                  {...register("name")}
+                  {...register("name", { required: true })}
                   placeholder="Enter your Name"
                   className="input"
                 />
@@ -107,7 +119,6 @@ const SignUp = () => {
                 </label>
                 <input
                   type="email"
-                  name="email"
                   {...register("email", { required: true })}
                   placeholder="Enter your Email"
                   className="input"
@@ -126,7 +137,6 @@ const SignUp = () => {
                 </label>
                 <input
                   type="password"
-                  name="password"
                   {...register("password", {
                     required: true,
                     minLength: 6,
@@ -161,11 +171,15 @@ const SignUp = () => {
                 </label>
                 <input
                   type="password"
-                  name="confirm"
-                  {...register("confirm")}
+                  {...register("confirm", { required: true })}
                   placeholder="Confirm Password"
                   className="input"
                 />
+                {errors.confirm && (
+                  <span className="text-red-500 text-left mt-2">
+                    Confirm Password must be same value of the password
+                  </span>
+                )}
               </div>
               <div className="form-control">
                 <label className="label">
@@ -175,7 +189,6 @@ const SignUp = () => {
                 </label>
                 <input
                   type="text"
-                  name="photo"
                   {...register("photo", { required: true })}
                   placeholder="Enter your photo URL"
                   className="input"

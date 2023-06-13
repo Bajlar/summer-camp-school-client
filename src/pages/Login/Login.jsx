@@ -19,11 +19,12 @@ const Login = () => {
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     signIn(data.email, data.password)
       .then((result) => {
         const loggedUser = result.user;
-        console.log(loggedUser);
+        // console.log(loggedUser);
+        reset();
         Swal.fire({
           position: "center",
           icon: "success",
