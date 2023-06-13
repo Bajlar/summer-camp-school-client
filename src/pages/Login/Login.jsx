@@ -1,40 +1,37 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaEye, FaEyeSlash} from "react-icons/fa";
+import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useForm } from "react-hook-form";
-// import Swal from 'sweetalert2';
-import SocialLogin from '../../components/SocialLogin';
-import { Helmet } from 'react-helmet-async';
+import Swal from "sweetalert2";
+import SocialLogin from "../../components/SocialLogin";
+import { Helmet } from "react-helmet-async";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
 
-  // const { signIn } = useContext(AuthContext);
-  // console.log(signIn);
+  const { signIn } = useContext(AuthContext);
 
-  const {
-    register,
-    handleSubmit,
-    reset
-  } = useForm();
+  const { register, handleSubmit, reset } = useForm();
+
   const onSubmit = (data) => {
     console.log(data);
-    // signIn(email, password)
-    //   .then((result) => {
-    //     const user = result.user;
-    //     console.log(user);
-    //     Swal.fire({
-    //       position: "center",
-    //       icon: "success",
-    //       title: "User login successfully",
-    //       showConfirmButton: false,
-    //       timer: 1500,
-    //     });
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
+    signIn(data.email, data.password)
+      .then((result) => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "User login successfully",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   const togglePasswordVisibility = () => {

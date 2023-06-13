@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import SocialLogin from '../../components/SocialLogin';
 import { Helmet } from 'react-helmet-async';
+import Swal from 'sweetalert2';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const SignUp = () => {
+  const { createUser } = useContext(AuthContext);
 
   const {
     register,
@@ -13,6 +16,25 @@ const SignUp = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
+    if (data.password !== data.confirm) {
+      Swal.fire({
+        position: "top-center",
+        icon: "error",
+        title: "Passwords don't match!",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      return;
+    }
+    createUser(data.email, data.password)
+      .then(result => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+      })
+      .catch(error => {
+        console.log(error);
+      })
+
     // createUser(data.email, data.password).then((result) => {
     //   const loggedUser = result.user;
     //   console.log(loggedUser);
@@ -48,14 +70,6 @@ const SignUp = () => {
 
   // console.log(errors);
 
-  // if (password !== confirm) {
-  //   setError("Your password did not match");
-  //   return;
-  // } else if (password.length < 6) {
-  //   setError("password must be 6 characters or longer");
-  //   return;
-  // }
-
   return (
     <div className="mt-4">
       <Helmet>
@@ -74,6 +88,7 @@ const SignUp = () => {
                 </label>
                 <input
                   type="text"
+                  name="name"
                   {...register("name")}
                   placeholder="Enter your Name"
                   className="input"
@@ -92,6 +107,7 @@ const SignUp = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   {...register("email", { required: true })}
                   placeholder="Enter your Email"
                   className="input"
@@ -110,6 +126,7 @@ const SignUp = () => {
                 </label>
                 <input
                   type="password"
+                  name="password"
                   {...register("password", {
                     required: true,
                     minLength: 6,
@@ -144,6 +161,7 @@ const SignUp = () => {
                 </label>
                 <input
                   type="password"
+                  name="confirm"
                   {...register("confirm")}
                   placeholder="Confirm Password"
                   className="input"
@@ -157,6 +175,7 @@ const SignUp = () => {
                 </label>
                 <input
                   type="text"
+                  name="photo"
                   {...register("photo", { required: true })}
                   placeholder="Enter your photo URL"
                   className="input"

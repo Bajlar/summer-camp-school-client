@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import brandLogo from '../../../assets/images/logo/logo-small.png';
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    // console.log('btn click');
+    logOut()
+      .then(() => {})
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const navItems = (
     <>
@@ -19,20 +30,37 @@ const Navbar = () => {
         <li className="hover:bg-gray-100 text-white font-medium rounded-lg">
           <Link to="/dashboard">Dashboard</Link>
         </li>
-        <li>
-          <Link to="/login">
-            <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0">
-              Login
-            </button>
-          </Link>
-        </li>
-        <li>
+
+        <div>
+          {user ? (
+            <div className="flex justify-center items-center gap-4">
+              <p className="text-lg">{user?.email}</p>
+              <button
+                onClick={handleSignOut}
+                className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0"
+              >
+                Sign Out
+              </button>
+            </div>
+          ) : (
+            <>
+              <li>
+                <Link to="/login">
+                  <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0">
+                    Login
+                  </button>
+                </Link>
+              </li>
+            </>
+          )}
+        </div>
+        {/* <li>
           <Link to="/signUp">
             <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0">
               Sign Up
             </button>
           </Link>
-        </li>
+        </li> */}
       </div>
     </>
   );
