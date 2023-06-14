@@ -68,29 +68,7 @@ const SignUp = () => {
           });
         });
     });
-
-    // createUser(data.email, data.password)
-    //   .then((result) => {
-    //     const loggedUser = result.user;
-    //     // console.log(loggedUser);
-    //     updateUserProfile(data.name, data.photo).then(() => {
-    //       reset();
-    //       Swal.fire({
-    //         position: "center",
-    //         icon: "success",
-    //         title: "User Create successfully",
-    //         showConfirmButton: false,
-    //         timer: 1500,
-    //       });
-    //       navigate('/')
-    //     });
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
   };
-
-  // console.log(errors);
 
   return (
     <div className="my-20">
