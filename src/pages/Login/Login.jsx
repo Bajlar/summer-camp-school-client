@@ -48,14 +48,14 @@ const Login = () => {
   };
 
   return (
-    <div className="mt-4">
+    <div className="my-20">
       <Helmet>
         <title>Cricket academy | Login</title>
       </Helmet>
       <div className="hero min-h-screen bg-base-100">
         <div className="hero-content flex-col md:w-4/12 mx-auto">
           <div className="text-center">
-            <h1 className="text-5xl font-bold">Login now!</h1>
+            <h1 className="text-4xl font-bold">Login now!</h1>
           </div>
           <div className="card w-full shadow-2xl bg-base-200">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">

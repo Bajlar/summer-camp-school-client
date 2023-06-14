@@ -6,7 +6,9 @@
     "instructorName": "John Smith",
     "availableSeats": 10,
     "price": "$50",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36eeb9",
@@ -15,7 +17,9 @@
     "instructorName": "Sarah Johnson",
     "availableSeats": 8,
     "price": "$80",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee7c",
@@ -24,7 +28,9 @@
     "instructorName": "Michael Brown",
     "availableSeats": 12,
     "price": "$60",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee88",
@@ -33,7 +39,9 @@
     "instructorName": "David Wilson",
     "availableSeats": 25,
     "price": "$70",
-    "category": "popular"
+    "category": "popular",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee7a",
@@ -42,7 +50,9 @@
     "instructorName": "Emma Thompson",
     "availableSeats": 20,
     "price": "$90",
-    "category": "popular"
+    "category": "popular",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee8c",
@@ -51,7 +61,9 @@
     "instructorName": "Robert Davis",
     "availableSeats": 6,
     "price": "$75",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee94",
@@ -60,7 +72,9 @@
     "instructorName": "Jennifer Lee",
     "availableSeats": 10,
     "price": "$55",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee9e",
@@ -69,7 +83,9 @@
     "instructorName": "Andrew Mitchell",
     "availableSeats": 21,
     "price": "$120",
-    "category": "popular"
+    "category": "popular",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36eea6",
@@ -78,7 +94,9 @@
     "instructorName": "Laura Anderson",
     "availableSeats": 7,
     "price": "$85",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36eeaf",
@@ -87,7 +105,9 @@
     "instructorName": "Mark Roberts",
     "availableSeats": 31,
     "price": "$40",
-    "category": "popular"
+    "category": "popular",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee89",
@@ -96,7 +116,9 @@
     "instructorName": "Michelle Adams",
     "availableSeats": 10,
     "price": "$65",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee8a",
@@ -105,7 +127,9 @@
     "instructorName": "Daniel Thomas",
     "availableSeats": 27,
     "price": "$70",
-    "category": "popular"
+    "category": "popular",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee96",
@@ -114,7 +138,9 @@
     "instructorName": "Sophie Brown",
     "availableSeats": 12,
     "price": "$90",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee81",
@@ -123,7 +149,9 @@
     "instructorName": "George Evans",
     "availableSeats": 10,
     "price": "$55",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee84",
@@ -132,7 +160,9 @@
     "instructorName": "Olivia Turner",
     "availableSeats": 19,
     "price": "$80",
-    "category": "popular"
+    "category": "popular",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36eea4",
@@ -141,7 +171,9 @@
     "instructorName": "William Clark",
     "availableSeats": 15,
     "price": "$100",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36eea5",
@@ -150,7 +182,9 @@
     "instructorName": "Sophia Allen",
     "availableSeats": 10,
     "price": "$60",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   },
   {
     "_id": "642c155b2c4774f05c36ee7f",
@@ -159,6 +193,8 @@
     "instructorName": "Jacob Harris",
     "availableSeats": 7,
     "price": "$75",
-    "category": "general"
+    "category": "general",
+    "status": "approved",
+    "EnrolledStudents": 0
   }
 ]

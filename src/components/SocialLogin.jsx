@@ -12,18 +12,41 @@ const SocialLogin = () => {
 
   const handleGoogleSignIn = () => {
      googleSignIn()
-       .then(result => {
+       .then((result) => {
          const loggedInUser = result.user;
-        //  console.log(loggedInUser);
+         const saveUser = {
+           name: loggedInUser.displayName,
+           email: loggedInUser.email,
+         };
+         fetch("http://localhost:5000/users", {
+           method: "POST",
+           headers: {
+             "content-type": "application/json",
+           },
+           body: JSON.stringify(saveUser),
+         })
+           .then((result) => result.json())
+           .then(() => {
+             Swal.fire({
+               position: "top-center",
+               icon: "success",
+               title: "Successfully Login",
+               showConfirmButton: false,
+               timer: 1500,
+             });
+             navigate(from, { replace: true });
+           });
+       })
+       .catch((error) => {
+         console.log(error);
          Swal.fire({
            position: "center",
-           icon: "success",
-           title: "User login successfully",
+           icon: "error",
+           title: "Something Went Wrong! Please Try Again",
            showConfirmButton: false,
            timer: 1500,
          });
-          navigate(from, { replace: true });
-       })
+       });
   }
 
   return (

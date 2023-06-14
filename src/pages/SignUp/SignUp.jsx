@@ -28,70 +28,79 @@ const SignUp = () => {
       });
       return;
     }
-    createUser(data.email, data.password)
-      .then((result) => {
-        const loggedUser = result.user;
-        // console.log(loggedUser);
-        updateUserProfile(data.name, data.photo).then(() => {
-          reset();
+
+    createUser(data.email, data.password).then((res) => {
+      const loggedUser = res.user;
+      console.log(loggedUser);
+      updateUserProfile(data.name, data.photo)
+        .then(() => {
+          const saveUser = { name: data.name, email: data.email };
+          fetch("http://localhost:5000/users", {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify(saveUser),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              if (data.insertedId) {
+                reset();
+                Swal.fire({
+                  position: "center",
+                  icon: "success",
+                  title: "User Create successfully",
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+                navigate("/");
+              }
+            });
+        })
+        .catch((err) => {
+          console.log(err);
           Swal.fire({
             position: "center",
-            icon: "success",
-            title: "User Create successfully",
+            icon: "error",
+            title: "Something Went Wrong",
             showConfirmButton: false,
             timer: 1500,
           });
-          navigate('/')
         });
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    });
 
-    // createUser(data.email, data.password).then((result) => {
-    //   const loggedUser = result.user;
-    //   console.log(loggedUser);
-    //   updateUserProfile(data.name, data.photo)
-    //     .then(() => {
-    //       const saveUser = { name: data.name, email: data.email };
-    //       fetch("https://recap-bistro-boss-server.vercel.app/users", {
-    //         method: "POST",
-    //         headers: {
-    //           "content-type": "application/json",
-    //         },
-    //         body: JSON.stringify(saveUser),
-    //       })
-    //         .then((res) => res.json())
-    //         .then((data) => {
-    //           // console.log(data);
-    //           if (data.insertedId) {
-    //             Swal.fire({
-    //               position: "center",
-    //               icon: "success",
-    //               title: "User created successfully.",
-    //               showConfirmButton: false,
-    //               timer: 1500,
-    //             });
-    //           }
-    //         });
-    //     })
-    //     .catch((error) => {
-    //       console.log(error);
+    // createUser(data.email, data.password)
+    //   .then((result) => {
+    //     const loggedUser = result.user;
+    //     // console.log(loggedUser);
+    //     updateUserProfile(data.name, data.photo).then(() => {
+    //       reset();
+    //       Swal.fire({
+    //         position: "center",
+    //         icon: "success",
+    //         title: "User Create successfully",
+    //         showConfirmButton: false,
+    //         timer: 1500,
+    //       });
+    //       navigate('/')
     //     });
-    // });
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
   };
 
   // console.log(errors);
 
   return (
-    <div className="mt-4">
+    <div className="my-20">
       <Helmet>
         <title>Cricket academy | Sign Up</title>
       </Helmet>
       <div className="hero min-h-screen bg-base-100">
         <div className="hero-content flex-col md:w-4/12 mx-auto">
           <div className="text-center">
-            <h1 className="text-5xl font-bold">Please Register now!</h1>
+            <h1 className="text-4xl font-bold">Please Register now!</h1>
           </div>
           <div className="card w-full shadow-2xl bg-base-200">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
