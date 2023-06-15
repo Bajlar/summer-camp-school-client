@@ -1,5 +1,6 @@
 import React from 'react';
-import useClasses from '../../../hooks/UseClasses';
+import useClasses from '../../../hooks/useClasses';
+import { Link } from 'react-router-dom';
 
 const MyClasses = () => {
   const [classes] = useClasses();
@@ -56,7 +57,9 @@ const MyClasses = () => {
                   <button className="btn btn-sm capitalize">Approved</button>
                 </td>
                 <td>
-                  <button className="btn btn-sm capitalize">Denied</button>
+                  <Link to="/dashboard/feedback">
+                    <button className="btn btn-sm capitalize">Denied</button>
+                  </Link>
                 </td>
               </tr>
             ))}

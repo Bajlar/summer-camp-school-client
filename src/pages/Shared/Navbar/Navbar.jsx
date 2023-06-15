@@ -1,12 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import brandLogo from '../../../assets/images/logo/logo-small.png';
-import useAdmin from '../../../hooks/useAdmin';
 import useAuth from '../../../hooks/useAuth';
+import useAdmin from '../../../hooks/useAdmin';
+// import useInstructor from '../../../hooks/useInstructor';
 
 const Navbar = () => {
   const { user, logOut } = useAuth();
   const [isAdmin] = useAdmin();
+  
+  // const [isInstructor] = useInstructor();
+    // const isInstructor = false;
+    // const isAdmin = true;
+    // const isInstructor = true;
+    // const isAdmin = false;
 
   const handleSignOut = () => {
     // console.log('btn click');
@@ -40,11 +47,40 @@ const Navbar = () => {
             </Link>
           </li>
         )}
+
+        {/* {user && (
+          <li className="hover:bg-gray-100 text-white font-medium rounded-lg">
+            <Link
+              to={`${
+                isAdmin
+                  ? "/dashboard/manageUsers"
+                  : 
+                   "/dashboard/addClass"
+              }`}
+            >
+              Dashboard
+            </Link>
+          </li>
+          // <li className="hover:bg-gray-100 text-white font-medium rounded-lg">
+          //   <Link
+          //     to={`${
+          //       isAdmin
+          //         ? "/dashboard/manageUsers"
+          //         : isInstructor
+          //         ? "/dashboard/addClass"
+          //         : "/dashboard/UserHome"
+          //     }`}
+          //   >
+          //     Dashboard
+          //   </Link>
+          // </li>
+        )} */}
+
         <div>
           {user ? (
             <div className="flex justify-center items-center gap-4">
               {/* <p className="text-lg">{user?.displayName}</p> */}
-              <p className="text-lg">{user?.email}</p>
+              {/* <p className="text-lg">{user?.email}</p> */}
               <div className="avatar placeholder">
                 <div className="text-neutral-content rounded-full w-12">
                   <img src={user?.photoURL} alt="" />
@@ -110,32 +146,6 @@ const Navbar = () => {
         </div>
       </div>
     </>
-
-    // <nav className="bg-gray-800 text-white">
-    //   <div className="container mx-auto flex justify-between items-center py-4">
-    //     <div className="text-lg font-bold">
-
-    //     </div>
-    //     <div className="flex items-center space-x-4">
-    //       <a href="/" className="hover:text-gray-300">
-    //         Home
-    //       </a>
-    //       <a href="/instructors" className="hover:text-gray-300">
-    //         Instructors
-    //       </a>
-    //       <a href="/classes" className="hover:text-gray-300">
-    //         Classes
-    //       </a>
-    //       <a href="/dashboard" className="hover:text-gray-300">
-    //         Dashboard
-    //       </a>
-    //       <div className="flex items-center">
-    //         <div className="rounded-full w-8 h-8 bg-gray-300"></div>
-    //         {/* Replace the above div with your user profile picture */}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </nav>
   );
 };
 

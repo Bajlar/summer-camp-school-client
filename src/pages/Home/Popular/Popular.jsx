@@ -1,6 +1,6 @@
 import React from "react";
 import ClassItem from "./ClassItem";
-import useClasses from "../../../hooks/UseClasses";
+import useClasses from "../../../hooks/useClasses";
 
 const Popular = () => {
   const [classes] = useClasses();

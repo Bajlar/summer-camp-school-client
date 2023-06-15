@@ -1,20 +1,22 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import {
-  FaHome,
-  FaUserTie,
-  FaUsers,
-} from "react-icons/fa";
+import { FaHome, FaUserTie, FaUsers } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
 // import useAdmin from "../hooks/useAdmin";
+// import useInstructor from "../hooks/useInstructor";
 
 const Dashboard = () => {
-  const isAdmin = true;
   // const [isAdmin] = useAdmin();
+  const isAdmin = true;
+
+  // const isInstructor = false;
+  // const isInstructor = true;
+  // const isAdmin = false;
+  // const [isInstructor] = useInstructor();
 
   return (
     <div>
-       <Helmet>
+      <Helmet>
         <title>Cricket academy | Dashboard</title>
       </Helmet>
       <div className="drawer lg:drawer-open">
@@ -35,6 +37,7 @@ const Dashboard = () => {
             <h3 className="text-2xl font-black pl-4 mb-4 uppercase">
               Cricket Academy
             </h3>
+
             {isAdmin ? (
               <>
                 <li>
@@ -62,6 +65,65 @@ const Dashboard = () => {
                 </li>
               </>
             )}
+
+            {/* {isAdmin ? (
+              <>
+                <li>
+                  <NavLink to="/dashboard/manageUsers">
+                    <FaHome className="text-2xl"></FaHome>Manage Users
+                  </NavLink>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <NavLink to="/dashboard/addClass">
+                    <FaUserTie className="text-2xl"></FaUserTie>Add Class
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/dashboard/myClasses">
+                    <FaUsers className="text-2xl"></FaUsers>My Classes
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/dashboard/userHome">
+                    <FaHome className="text-2xl"></FaHome>User Home
+                  </NavLink>
+                </li>
+              </>
+            )} */}
+
+            {/* {isAdmin ? (
+              <>
+                <li>
+                  <NavLink to="/dashboard/manageUsers">
+                    <FaHome className="text-2xl"></FaHome>Manage Users
+                  </NavLink>
+                </li>
+              </>
+            ) : isInstructor ? (
+              <>
+                <li>
+                  <NavLink to="/dashboard/addClass">
+                    <FaUserTie className="text-2xl"></FaUserTie>Add Class
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/dashboard/myClasses">
+                    <FaUsers className="text-2xl"></FaUsers>My Classes
+                  </NavLink>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <NavLink to="/dashboard/userHome">
+                    <FaHome className="text-2xl"></FaHome>User Home
+                  </NavLink>
+                </li>
+              </>
+            )} */}
 
             <div className="divider"></div>
             <li>

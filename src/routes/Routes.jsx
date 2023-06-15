@@ -10,9 +10,9 @@ import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../layout/Dashboard";
 import UserHome from "../pages/Dashboard/UserHome/UserHome";
 import ManageUsers from "../pages/Dashboard/ManageUsers/ManageUsers";
-// import Instructor from "../pages/Dashboard/Instructor/Instructor";
 import MyClasses from "../pages/Dashboard/MyClasses/MyClasses";
 import AddClass from "../pages/Dashboard/AddClass/AddClass";
+import Feedback from "../pages/Dashboard/Feedback/Feedback";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +68,10 @@ const router = createBrowserRouter([
       {
         path: "myClasses",
         element: <MyClasses></MyClasses>,
+      },
+      {
+        path: "feedback",
+        element: <Feedback></Feedback>
       },
     ],
   },

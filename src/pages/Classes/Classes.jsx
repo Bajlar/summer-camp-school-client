@@ -1,7 +1,7 @@
 import React from 'react';
 import SingleClass from './SingleClass';
 import { Helmet } from 'react-helmet-async';
-import useClasses from '../../hooks/UseClasses';
+import useClasses from '../../hooks/useClasses';
 
 const Classes = () => {
   const [classes] = useClasses();

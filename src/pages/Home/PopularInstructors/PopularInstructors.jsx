@@ -1,6 +1,6 @@
 import React from 'react';
 import Instructor from './Instructor';
-import useInstructors from '../../../hooks/UseInstructors';
+import useInstructors from '../../../hooks/useInstructors';
 
 const PopularInstructors = () => {
   const [instructors] = useInstructors();

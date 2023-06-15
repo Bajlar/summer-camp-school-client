@@ -42,7 +42,7 @@ const ManageUsers = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.modifiedCount) {
           Swal.fire({
             position: "center",
@@ -91,13 +91,11 @@ const ManageUsers = () => {
                 <td className="py-4 font-inter">
                   <div className="flex gap-6">
                     {user.role === "Admin" ? (
-                      <span className="text-green-700 font-medium">
-                        Admin
-                      </span>
+                      <span className="text-green-700 font-medium">Admin</span>
                     ) : (
                       <button
                         onClick={() => handleMakeAdmin(user)}
-                        className="btn btn-sm"
+                        className="btn btn-sm capitalize"
                       >
                         Make Admin
                       </button>
@@ -113,7 +111,7 @@ const ManageUsers = () => {
                     ) : (
                       <button
                         onClick={() => handleMakeInstructor(user)}
-                        className="btn btn-sm"
+                        className="btn btn-sm capitalize"
                       >
                         Make Instructor
                       </button>

@@ -1,7 +1,7 @@
 import React from 'react';
 import SingleInstructor from './SingleInstructor';
 import { Helmet } from 'react-helmet-async';
-import useInstructors from '../../hooks/UseInstructors';
+import useInstructors from '../../hooks/useInstructors';
 
 const Instructors = () => {
   const [instructors] = useInstructors();
