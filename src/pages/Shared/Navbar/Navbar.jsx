@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import brandLogo from '../../../assets/images/logo/logo-small.png';
-import { AuthContext } from '../../../providers/AuthProvider';
 import useAdmin from '../../../hooks/useAdmin';
+import useAuth from '../../../hooks/useAuth';
 
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, logOut } = useAuth();
   const [isAdmin] = useAdmin();
 
   const handleSignOut = () => {

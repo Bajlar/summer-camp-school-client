@@ -1,12 +1,3 @@
-// 6. **Instructors Page:**
-// Display all the instructors. Each Instructor will be:
-//    - Image
-//    - Name
-//    - Email
-//    - (optional) Number of Classes taken by the Instructor. 
-//    - (optional) Name of the Classes taken by the Instructor. 
-//    - (optional) `See Classes` button to show classes by this Instructor. This will take you to a new link
-
 // 7. **Classes page:**
 // Show all approved classes on this page. Each Class will have the following:
 //    - Image
@@ -46,7 +37,6 @@
         - Add button
         - When creating a class on the database, the value of the status field will be pending.
 
-
       - **My Classes:**  Show all the Classes an instructor has added after clicking the **Add button** from the **Add a Class page**. Each Class will show relevant information, including **pending/ approved/ denied** status, **Total Enrolled Students**, **Feedback** & **Update button**.
         
         - **Total Enrolled Students:** Initially it will be zero. If any student has successfully booked the Class, show the total number of students.
@@ -69,24 +59,24 @@
 
         
 
-       - **Manage Users:**  The admin can see the relevant information of all registered users. By default, everyone will be a student. And there will be **2 buttons**: **Make Instructor** button and **Make Admin** button. If a user clicks any of the buttons, disable it.
+      //  - **Manage Users:**  The admin can see the relevant information of all registered users. By default, everyone will be a student. And there will be **2 buttons**: **Make Instructor** button and **Make Admin** button. If a user clicks any of the buttons, disable it.
 
-         - **Make Instructor button Action:** Update the user role as an instructor.
+      //    - **Make Instructor button Action:** Update the user role as an instructor.
 
-           >**Note:** If the admin makes a user instructor, that user profile page will have the Instructor as the role
+      //      >**Note:** If the admin makes a user instructor, that user profile page will have the Instructor as the role
 
-         - **Make Admin button Action:** Update the user role as an admin.
+      //    - **Make Admin button Action:** Update the user role as an admin.
           
 
-12. Use **relevant icons** in your **dashboard menus**, animations on your website.\. You have to use **anyone** of the animation libraries below:
-    - [Framer-motion](https://www.framer.com/motion/)
-    - [React-awesome-reveal](https://react-awesome-reveal.morello.dev/)
-    - [React-spring](https://www.react-spring.dev/)
-    - [React-anime](https://github.com/juliangarnier/anime)
+// 12. Use **relevant icons** in your **dashboard menus**, animations on your website.\. You have to use **anyone** of the animation libraries below:
+//     - [Framer-motion](https://www.framer.com/motion/)
+//     - [React-awesome-reveal](https://react-awesome-reveal.morello.dev/)
+//     - [React-spring](https://www.react-spring.dev/)
+//     - [React-anime](https://github.com/juliangarnier/anime)
 
 // ## :writing_hand: **Bonus Task:**
 
-1. Minimum 20 meaningful git commits on the client-side repository and 12 meaningful commits on the server-side repository. Feel free to commit as many as needed to save your progress during load-shedding.
+// 1. Minimum 20 meaningful git commits on the client-side repository and 12 meaningful commits on the server-side repository. Feel free to commit as many as needed to save your progress during load-shedding.
 
 // 2. Create a readme for the client-side and write about your project.
 
@@ -95,13 +85,13 @@
 //     - Used packages/ technology name
 //     - Live site link
 
-3. Implementing a dark/light theme toggle for the home page. It's optional to implement the theme toggle for the entire website\.
+// 3. Implementing a dark/light theme toggle for the home page. It's optional to implement the theme toggle for the entire website\.
 
 // 4. Make the home page responsive. If possible, Make your entire website responsive\. (It is ok if the table is not responsive\.)
 
-5. Use tanstack query (react-query) in at least two places. If needed, you can use it everywhere.
+// 5. Use tanstack query (react-query) in at least two places. If needed, you can use it everywhere.
 
-6. use Axios for at least two calls.
+// 6. use Axios for at least two calls.
 
 // 7.  Must Use [react-hook-form](https://react-hook-form.com/) in the registration & login page. Using react hook form in another place is optional.
 

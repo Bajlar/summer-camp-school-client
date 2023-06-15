@@ -43,8 +43,8 @@ const Dashboard = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/dashboard/instructor">
-                    <FaUserTie className="text-2xl"></FaUserTie>Instructor
+                  <NavLink to="/dashboard/addClass">
+                    <FaUserTie className="text-2xl"></FaUserTie>Add Class
                   </NavLink>
                 </li>
                 <li>

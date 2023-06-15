@@ -5,7 +5,7 @@
     "className": "Beginner's Batting Class",
     "instructorName": "John Smith",
     "availableSeats": 10,
-    "price": "$50",
+    "price": "50",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
@@ -16,7 +16,7 @@
     "className": "Advanced Spin Bowling Class",
     "instructorName": "Sarah Johnson",
     "availableSeats": 8,
-    "price": "$80",
+    "price": "80",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
@@ -27,7 +27,7 @@
     "className": "Junior All-Rounders Training",
     "instructorName": "Michael Brown",
     "availableSeats": 12,
-    "price": "$60",
+    "price": "60",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
@@ -38,7 +38,7 @@
     "className": "Wicketkeeping Masterclass",
     "instructorName": "David Wilson",
     "availableSeats": 25,
-    "price": "$70",
+    "price": "70",
     "category": "popular",
     "status": "approved",
     "EnrolledStudents": 0
@@ -49,7 +49,7 @@
     "className": "Women's Cricket Development Program",
     "instructorName": "Emma Thompson",
     "availableSeats": 20,
-    "price": "$90",
+    "price": "90",
     "category": "popular",
     "status": "approved",
     "EnrolledStudents": 0
@@ -60,7 +60,7 @@
     "className": "Fast Bowling Intensive Training",
     "instructorName": "Robert Davis",
     "availableSeats": 6,
-    "price": "$75",
+    "price": "75",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
@@ -71,7 +71,7 @@
     "className": "Batting Technique Enhancement Camp",
     "instructorName": "Jennifer Lee",
     "availableSeats": 10,
-    "price": "$55",
+    "price": "55",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
@@ -82,7 +82,7 @@
     "className": "Youth Cricket Summer Camp",
     "instructorName": "Andrew Mitchell",
     "availableSeats": 21,
-    "price": "$120",
+    "price": "120",
     "category": "popular",
     "status": "approved",
     "EnrolledStudents": 0
@@ -93,7 +93,7 @@
     "className": "Batting class",
     "instructorName": "Laura Anderson",
     "availableSeats": 7,
-    "price": "$85",
+    "price": "85",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
@@ -104,7 +104,7 @@
     "className": "Indoor Cricket League",
     "instructorName": "Mark Roberts",
     "availableSeats": 31,
-    "price": "$40",
+    "price": "40",
     "category": "popular",
     "status": "approved",
     "EnrolledStudents": 0
@@ -115,7 +115,7 @@
     "className": "Cricket Fitness Bootcamp",
     "instructorName": "Michelle Adams",
     "availableSeats": 10,
-    "price": "$65",
+    "price": "65",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
@@ -126,7 +126,7 @@
     "className": "Specialized Fielding Techniques Workshop",
     "instructorName": "Daniel Thomas",
     "availableSeats": 27,
-    "price": "$70",
+    "price": "70",
     "category": "popular",
     "status": "approved",
     "EnrolledStudents": 0
@@ -137,7 +137,7 @@
     "className": "T20 Match Strategies Masterclass",
     "instructorName": "Sophie Brown",
     "availableSeats": 12,
-    "price": "$90",
+    "price": "90",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
@@ -148,7 +148,7 @@
     "className": "Cricket Umpiring and Scoring Course",
     "instructorName": "George Evans",
     "availableSeats": 10,
-    "price": "$55",
+    "price": "55",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
@@ -159,7 +159,7 @@
     "className": "Cricket Psychology and Mental Skills Workshop",
     "instructorName": "Olivia Turner",
     "availableSeats": 19,
-    "price": "$80",
+    "price": "80",
     "category": "popular",
     "status": "approved",
     "EnrolledStudents": 0
@@ -170,7 +170,7 @@
     "className": "Leg spin bolling class",
     "instructorName": "William Clark",
     "availableSeats": 15,
-    "price": "$100",
+    "price": "100",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
@@ -181,7 +181,7 @@
     "className": "Batting skills",
     "instructorName": "Sophia Allen",
     "availableSeats": 10,
-    "price": "$60",
+    "price": "60",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
@@ -192,7 +192,7 @@
     "className": "Best fielding class",
     "instructorName": "Jacob Harris",
     "availableSeats": 7,
-    "price": "$75",
+    "price": "75",
     "category": "general",
     "status": "approved",
     "EnrolledStudents": 0
