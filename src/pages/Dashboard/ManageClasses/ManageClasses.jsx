@@ -1,13 +1,17 @@
 import React from 'react';
 import useClasses from '../../../hooks/useClasses';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const ManageClasses = () => {
   const [classes] = useClasses();
   // console.log(classes);
 
   return (
-    <div className="w-full min-h-screen p-4">
+    <div className="w-full min-h-screen">
+      <Helmet>
+        <title>Cricket academy | Manage Classes</title>
+      </Helmet>
       <div className="text-center mb-4">
         <p className="text-3xl font-bold">Total Items: {classes.length}</p>
       </div>
@@ -17,10 +21,11 @@ const ManageClasses = () => {
           <thead>
             <tr>
               <th className="font-semibold text-md"></th>
-              <th className="font-semibold text-md">Image Item</th>
+              <th className="font-semibold text-md">Class Image</th>
               <th className="font-semibold text-md">Class Name</th>
               <th className="font-semibold text-md">Instructor Name</th>
-              <th className="font-semibold text-md">Available Seats</th>
+              <th className="font-semibold text-md">Instructor Email</th>
+              <th className="font-semibold text-md">Available seats</th>
               <th className="font-semibold text-md">Price</th>
               <th className="font-semibold text-md">Action</th>
               <th className="font-semibold text-md">Action</th>
@@ -47,9 +52,12 @@ const ManageClasses = () => {
                   <div className="text-[#737373]">{item.instructorName}</div>
                 </td>
                 <td>
+                  <div className="text-[#737373]">{item.instructorEmail}</div>
+                </td>
+                <td>
                   <div className="text-[#737373]">{item.availableSeats}</div>
                 </td>
-                <td className="text-[#737373]">${item.price}</td>
+                <td className="text-orange-500">${item.price}</td>
                 <td>
                   <button className="btn btn-sm capitalize">Pending</button>
                 </td>

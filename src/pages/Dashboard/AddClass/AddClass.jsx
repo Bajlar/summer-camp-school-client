@@ -1,7 +1,7 @@
 import React from 'react';
-import { Helmet } from "react-helmet-async";
 import Swal from 'sweetalert2';
 import useAuth from '../../../hooks/useAuth';
+import { Helmet } from 'react-helmet-async';
 
 const AddClass = () => {
   const { user } = useAuth();
@@ -28,7 +28,7 @@ const AddClass = () => {
     };
     // console.log(newAddClass);
 
-    fetch("http://localhost:5000/classes", {
+    fetch("https://summer-camp-school-server-bajlar.vercel.app/classes", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -53,7 +53,7 @@ const AddClass = () => {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Cricket academy | Instructor</title>
+        <title>Cricket academy | Add Class</title>
       </Helmet>
       <section>
         <form onSubmit={handleAddClass} className="bg-[#F3F3F3] p-20">

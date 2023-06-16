@@ -10,11 +10,6 @@ const Navbar = () => {
   const [isAdmin] = useAdmin();
   const [isInstructor] = useInstructor();
 
-    // const isInstructor = false;
-    // const isAdmin = true;
-    // const isInstructor = true;
-    // const isAdmin = false;
-
   const handleSignOut = () => {
     logOut()
       .then(() => {})

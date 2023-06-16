@@ -1,23 +1,20 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import { FaHome, FaUserTie, FaUsers } from "react-icons/fa";
-import { Helmet } from "react-helmet-async";
+import { FaAddressCard, FaHome, FaUserShield, FaUserTie, FaUsers } from "react-icons/fa";
+import { MdClass } from "react-icons/md";
 import useAdmin from "../hooks/useAdmin";
 import useInstructor from "../hooks/useInstructor";
 
 const Dashboard = () => {
 
   const [isAdmin] = useAdmin();
-  console.log(isAdmin);
+  // console.log(isAdmin);
 
   const [isInstructor] = useInstructor();
-  console.log(isInstructor);
+  // console.log(isInstructor);
 
   return (
     <div>
-      <Helmet>
-        <title>Cricket academy | Dashboard</title>
-      </Helmet>
       <div className="drawer lg:drawer-open">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-center justify-center">
@@ -32,20 +29,21 @@ const Dashboard = () => {
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
 
-          <ul className="menu p-4 w-72 h-full bg-[#e0b36f]">
+          <ul className="menu h-full  bg-[#D1A054]">
             <h3 className="text-2xl font-black pl-4 mb-4 uppercase">
               Cricket Academy
             </h3>
             {isAdmin ? (
               <>
                 <li>
-                  <NavLink to="/dashboard/manageUsers">
-                    <FaHome className="text-2xl"></FaHome>Manage Users
+                  <NavLink to="/dashboard/manageClasses">
+                    <MdClass className="text-2xl"></MdClass>Manage Classes
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/dashboard/manageClasses">
-                    <FaHome className="text-2xl"></FaHome>Manage Classes
+                  <NavLink to="/dashboard/manageUsers">
+                    <FaUserShield className="text-2xl"></FaUserShield>Manage
+                    Users
                   </NavLink>
                 </li>
               </>
@@ -55,7 +53,8 @@ const Dashboard = () => {
                   <>
                     <li>
                       <NavLink to="/dashboard/addClass">
-                        <FaUserTie className="text-2xl"></FaUserTie>Add Class
+                        <FaAddressCard className="text-2xl"></FaAddressCard>Add
+                        Class
                       </NavLink>
                     </li>
                     <li>

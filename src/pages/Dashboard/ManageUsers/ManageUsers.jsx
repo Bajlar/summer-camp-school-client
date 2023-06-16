@@ -2,11 +2,12 @@ import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import { Helmet } from "react-helmet-async";
 
 const ManageUsers = () => {
   const [axiosSecure] = useAxiosSecure();
   const { data: users = [], refetch } = useQuery(["users"], async () => {
-    const res = await fetch("http://localhost:5000/users");
+    const res = await fetch("https://summer-camp-school-server-bajlar.vercel.app/users");
     return res.json();
   });
 
@@ -49,6 +50,9 @@ const ManageUsers = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Cricket academy | Manage Users</title>
+      </Helmet>
       <div className="relative overflow-x-auto md:px-16 mt-5">
         <table className="w-full text-sm text-left text-gray-500">
           <thead className="text-md text-white capitalize bg-[#04AA6D]">
