@@ -3,20 +3,19 @@ import { Link } from 'react-router-dom';
 import brandLogo from '../../../assets/images/logo/logo-small.png';
 import useAuth from '../../../hooks/useAuth';
 import useAdmin from '../../../hooks/useAdmin';
-// import useInstructor from '../../../hooks/useInstructor';
+import useInstructor from '../../../hooks/useInstructor';
 
 const Navbar = () => {
   const { user, logOut } = useAuth();
   const [isAdmin] = useAdmin();
-  
-  // const [isInstructor] = useInstructor();
+  const [isInstructor] = useInstructor();
+
     // const isInstructor = false;
     // const isAdmin = true;
     // const isInstructor = true;
     // const isAdmin = false;
 
   const handleSignOut = () => {
-    // console.log('btn click');
     logOut()
       .then(() => {})
       .catch((error) => {
@@ -40,41 +39,17 @@ const Navbar = () => {
           <li className="hover:bg-gray-100 text-white font-medium rounded-lg">
             <Link
               to={`${
-                isAdmin ? "/dashboard/manageUsers" : "/dashboard/UserHome"
+                isAdmin
+                  ? "/dashboard/manageUsers"
+                  : isInstructor
+                  ? "/dashboard/addClass"
+                  : "/dashboard/UserHome"
               }`}
             >
               Dashboard
             </Link>
           </li>
         )}
-
-        {/* {user && (
-          <li className="hover:bg-gray-100 text-white font-medium rounded-lg">
-            <Link
-              to={`${
-                isAdmin
-                  ? "/dashboard/manageUsers"
-                  : 
-                   "/dashboard/addClass"
-              }`}
-            >
-              Dashboard
-            </Link>
-          </li>
-          // <li className="hover:bg-gray-100 text-white font-medium rounded-lg">
-          //   <Link
-          //     to={`${
-          //       isAdmin
-          //         ? "/dashboard/manageUsers"
-          //         : isInstructor
-          //         ? "/dashboard/addClass"
-          //         : "/dashboard/UserHome"
-          //     }`}
-          //   >
-          //     Dashboard
-          //   </Link>
-          // </li>
-        )} */}
 
         <div>
           {user ? (

@@ -152,7 +152,7 @@ const AddClass = () => {
               <input
                 type="text"
                 name="status"
-                defaultValue={"Pending"}
+                defaultValue={"pending"}
                 hidden
                 className="input w-full"
               />
