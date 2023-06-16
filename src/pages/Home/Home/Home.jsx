@@ -7,6 +7,7 @@ import Feature from '../Feature/Feature';
 import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
+  
   return (
     <div>
       <Helmet>

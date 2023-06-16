@@ -6,13 +6,16 @@ import { Helmet } from "react-helmet-async";
 // import useInstructor from "../hooks/useInstructor";
 
 const Dashboard = () => {
+
   // const [isAdmin] = useAdmin();
+  // const [isInstructor] = useInstructor();
   const isAdmin = true;
+  // const isUser = true;
 
   // const isInstructor = false;
-  // const isInstructor = true;
+  const isInstructor = true;
   // const isAdmin = false;
-  // const [isInstructor] = useInstructor();
+  
 
   return (
     <div>
@@ -66,6 +69,7 @@ const Dashboard = () => {
               </>
             )}
 
+            {/* -----------------------> */}
             {/* {isAdmin ? (
               <>
                 <li>
@@ -73,55 +77,36 @@ const Dashboard = () => {
                     <FaHome className="text-2xl"></FaHome>Manage Users
                   </NavLink>
                 </li>
-              </>
-            ) : (
-              <>
                 <li>
-                  <NavLink to="/dashboard/addClass">
-                    <FaUserTie className="text-2xl"></FaUserTie>Add Class
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/dashboard/myClasses">
-                    <FaUsers className="text-2xl"></FaUsers>My Classes
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/dashboard/userHome">
-                    <FaHome className="text-2xl"></FaHome>User Home
-                  </NavLink>
-                </li>
-              </>
-            )} */}
-
-            {/* {isAdmin ? (
-              <>
-                <li>
-                  <NavLink to="/dashboard/manageUsers">
-                    <FaHome className="text-2xl"></FaHome>Manage Users
-                  </NavLink>
-                </li>
-              </>
-            ) : isInstructor ? (
-              <>
-                <li>
-                  <NavLink to="/dashboard/addClass">
-                    <FaUserTie className="text-2xl"></FaUserTie>Add Class
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/dashboard/myClasses">
-                    <FaUsers className="text-2xl"></FaUsers>My Classes
+                  <NavLink to="/dashboard/manageClasses">
+                    <FaHome className="text-2xl"></FaHome>Manage Classes
                   </NavLink>
                 </li>
               </>
             ) : (
               <>
-                <li>
-                  <NavLink to="/dashboard/userHome">
-                    <FaHome className="text-2xl"></FaHome>User Home
-                  </NavLink>
-                </li>
+                {isInstructor ? (
+                  <>
+                    <li>
+                      <NavLink to="/dashboard/addClass">
+                        <FaUserTie className="text-2xl"></FaUserTie>Add Class
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/dashboard/myClasses">
+                        <FaUsers className="text-2xl"></FaUsers>My Classes
+                      </NavLink>
+                    </li>
+                  </>
+                ) : (
+                  <>
+                    <li>
+                      <NavLink to="/dashboard/userHome">
+                        <FaHome className="text-2xl"></FaHome>User Home
+                      </NavLink>
+                    </li>
+                  </>
+                )}
               </>
             )} */}
 

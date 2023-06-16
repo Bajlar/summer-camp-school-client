@@ -15,6 +15,7 @@ import axios from "axios";
 export const AuthContext = createContext(null);
 const auth = getAuth(app);
 
+
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -52,9 +53,9 @@ const AuthProvider = ({ children }) => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
 
-      if (currentUser) {
+      if (currentUser?.email) {
         axios
-          .post("http://localhost:5000/jwt", { email: currentUser.email })
+          .post("http://localhost:5000/jwt", { email: currentUser?.email })
           .then((data) => {
             // console.log(data.data.token);
             localStorage.setItem("access-token", data.data.token);

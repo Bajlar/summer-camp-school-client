@@ -14,7 +14,7 @@ const ManageUsers = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ role: "Admin" }),
+      body: JSON.stringify({ role: "admin" }),
     })
       .then((res) => res.json())
       .then((data) => {
@@ -38,7 +38,7 @@ const ManageUsers = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ role: "Instructor" }),
+      body: JSON.stringify({ role: "instructor" }),
     })
       .then((res) => res.json())
       .then((data) => {
@@ -90,7 +90,7 @@ const ManageUsers = () => {
                 <td className="px-6 py-4 font-inter">{user.email}</td>
                 <td className="py-4 font-inter">
                   <div className="flex gap-6">
-                    {user.role === "Admin" ? (
+                    {user.role === "admin" ? (
                       <span className="text-green-700 font-medium">Admin</span>
                     ) : (
                       <button
@@ -104,7 +104,7 @@ const ManageUsers = () => {
                 </td>
                 <td className="py-4 font-medium">
                   <div className="flex gap-6">
-                    {user.role === "Instructor" ? (
+                    {user.role === "instructor" ? (
                       <span className="text-[#f04400] font-medium">
                         Instructor
                       </span>
