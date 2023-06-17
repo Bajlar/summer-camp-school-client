@@ -38,7 +38,7 @@ const Navbar = () => {
                   ? "/dashboard/manageUsers"
                   : isInstructor
                   ? "/dashboard/addClass"
-                  : "/dashboard/UserHome"
+                  : "/dashboard/mySelectedClass"
               }`}
             >
               Dashboard

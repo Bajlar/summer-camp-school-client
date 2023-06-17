@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import { FaAddressCard, FaHome, FaUserShield, FaUserTie, FaUsers } from "react-icons/fa";
+import { FaAddressCard, FaHome, FaUserPlus, FaUserShield, FaUserTie, FaUsers } from "react-icons/fa";
 import { MdClass } from "react-icons/md";
 import useAdmin from "../hooks/useAdmin";
 import useInstructor from "../hooks/useInstructor";
@@ -36,14 +36,14 @@ const Dashboard = () => {
             {isAdmin ? (
               <>
                 <li>
-                  <NavLink to="/dashboard/manageClasses">
-                    <MdClass className="text-2xl"></MdClass>Manage Classes
-                  </NavLink>
-                </li>
-                <li>
                   <NavLink to="/dashboard/manageUsers">
                     <FaUserShield className="text-2xl"></FaUserShield>Manage
                     Users
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/dashboard/manageClasses">
+                    <MdClass className="text-2xl"></MdClass>Manage Classes
                   </NavLink>
                 </li>
               </>
@@ -66,8 +66,21 @@ const Dashboard = () => {
                 ) : (
                   <>
                     <li>
-                      <NavLink to="/dashboard/userHome">
-                        <FaHome className="text-2xl"></FaHome>User Home
+                      <NavLink to="/dashboard/mySelectedClass">
+                        <FaUsers className="text-2xl"></FaUsers>My Selected
+                        Class
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/dashboard/myEnrolledClasses">
+                        <FaUserPlus className="text-2xl"></FaUserPlus>
+                        My Enrolled Classes
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/dashboard/payment">
+                        <FaUserPlus className="text-2xl"></FaUserPlus>
+                        Payment
                       </NavLink>
                     </li>
                   </>

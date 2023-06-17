@@ -5,22 +5,38 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 const SingleClass = ({ classes }) => {
   // console.log(classes);
-  const { className, image, instructorName, price, availableSeats } = classes;
+  const { _id, className, image, instructorName, price, availableSeats } =
+    classes;
   const { user } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
   const handleSelected = (classes) => {
     // console.log(classes);
-    if (user) {
-      fetch("http://localhost:5000/selected")
+    if (user && user?.email) {
+      const classItem = {
+        classId: _id,
+        className,
+        image,
+        instructorName,
+        price,
+        availableSeats,
+        email: user.email,
+      };
+      fetch("http://localhost:5000/selected", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(classItem),
+      })
         .then((res) => res.json())
         .then((data) => {
           if (data.insertedId) {
             Swal.fire({
               position: "center",
               icon: "success",
-              title: "class selected added successfully",
+              title: "class selected successfully",
               showConfirmButton: false,
               timer: 1500,
             });
