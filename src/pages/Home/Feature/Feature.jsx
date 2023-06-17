@@ -1,9 +1,14 @@
 import React from 'react';
+import useTheme from '../../../hooks/useTheme';
 
 const Feature = () => {
+  const { isDarkMode } = useTheme();
+
   return (
-    <div className="card bg-base-100 shadow-xl">
-      <div className="card-body">
+    <div
+      className={`card shadow-xl ${isDarkMode ? "bg-black" : "bg-base-100"}`}
+    >
+      <div className={`card-body ${isDarkMode ? 'text-white' : ''}`}>
         <h2 className="card-title">
           Cricket academy schools are educational institutions that specialize
           in cricket training and development, offering comprehensive programs

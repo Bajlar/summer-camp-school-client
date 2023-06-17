@@ -1,17 +1,30 @@
 import React from 'react';
-import brandLogo from '../../../assets/images/logo/logo-default.png';
+import useTheme from '../../../hooks/useTheme';
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
+  const { isDarkMode } = useTheme();
+
   return (
-    <footer className="bg-gray-700 text-white">
+    <footer className={`${isDarkMode ? "bg-black" : "bg-gray-500"} text-white`}>
       <div className="container mx-auto py-8 pl-5">
         <div className="flex flex-wrap">
           <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 mb-4 sm:mb-0">
             <h4 className="text-lg font-bold">Future Force Cricket Academy</h4>
-            <img src={brandLogo} className='rounded-2xl' alt="" />
-            <p className="mt-2 text-sm">
-              Train with the best, become the best!
-            </p>
+            <p className="mt-2 text-sm">Follow Us On</p>
+            <div>
+              <div className="flex gap-4 mt-4">
+                <div className="text-2xl hover:text-[#04AA6D]">
+                  <FaFacebookF></FaFacebookF>
+                </div>
+                <div className="text-2xl hover:text-[#04AA6D]">
+                  <FaTwitter></FaTwitter>
+                </div>
+                <div className="text-2xl hover:text-[#04AA6D]">
+                  <FaInstagram></FaInstagram>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 mb-4 sm:mb-0">
             <h4 className="text-lg font-bold">Contact</h4>

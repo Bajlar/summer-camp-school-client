@@ -2,13 +2,15 @@ import React from 'react';
 import Swal from 'sweetalert2';
 import useAuth from '../../../hooks/useAuth';
 import { useLocation, useNavigate } from 'react-router-dom';
+import useTheme from '../../../hooks/useTheme';
 
 const ClassItem = ({ item }) => {
   // console.log(item);
   const { _id, className, image, instructorName, price, availableSeats } = item;
    const { user } = useAuth();
    const navigate = useNavigate();
-   const location = useLocation();
+  const location = useLocation();
+  const { isDarkMode } = useTheme();
 
   const handleSelected = (item) => {
     // console.log(item);
@@ -59,11 +61,13 @@ const ClassItem = ({ item }) => {
   };
 
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div
+      className={`card shadow-xl ${isDarkMode ? "bg-black" : "bg-base-100"}`}
+    >
       <figure className="px-10 pt-10">
         <img src={image} alt="" className="h-64 rounded-xl" />
       </figure>
-      <div className="card-body items-center text-center">
+      <div className={`card-body items-center text-center ${isDarkMode ? 'text-white' : ''}`}>
         <h2 className="card-title">Class Name: {className}</h2>
         <p>Instructor Name: {instructorName}</p>
         <p>Price: {price}</p>

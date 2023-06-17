@@ -4,11 +4,14 @@ import brandLogo from '../../../assets/images/logo/logo-small.png';
 import useAuth from '../../../hooks/useAuth';
 import useAdmin from '../../../hooks/useAdmin';
 import useInstructor from '../../../hooks/useInstructor';
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import useTheme from '../../../hooks/useTheme';
 
 const Navbar = () => {
   const { user, logOut } = useAuth();
   const [isAdmin] = useAdmin();
   const [isInstructor] = useInstructor();
+  const { isDarkMode, handleDarkMode } = useTheme();
 
   const handleSignOut = () => {
     logOut()
@@ -76,12 +79,32 @@ const Navbar = () => {
           )}
         </div>
       </div>
+      <div className="ml-4">
+        <button
+          onClick={handleDarkMode}
+          className={`${
+            isDarkMode
+              ? "p-3 rounded-full bg-white"
+              : "p-3 rounded-full bg-black"
+          }`}
+        >
+          {!isDarkMode ? (
+            <BsFillMoonStarsFill className="h-6 w-6 text-white" />
+          ) : (
+            <BsFillSunFill className="h-6 w-6 text-black" />
+          )}
+        </button>
+      </div>
     </>
   );
 
   return (
     <>
-      <div className="navbar fixed top-0 z-10 bg-gray-600 bg-opacity-30 text-white px-12">
+      <div
+        className={`navbar fixed top-0 z-10 ${
+          isDarkMode ? "bg-black" : "bg-gray-600 bg-opacity-30"
+        } text-white px-12`}
+      >
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

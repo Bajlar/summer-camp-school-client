@@ -5,16 +5,18 @@ import SectionTitle from '../../../components/SectionTitle';
 import PopularInstructors from '../PopularInstructors/PopularInstructors';
 import Feature from '../Feature/Feature';
 import { Helmet } from 'react-helmet-async';
+import useTheme from '../../../hooks/useTheme';
 
 const Home = () => {
+  const { isDarkMode } = useTheme();
   
   return (
-    <div>
+    <div className={`${isDarkMode ? 'bg-[#1d1c1c]' : ''}`}>
       <Helmet>
         <title>Cricket academy | Home</title>
       </Helmet>
       <Banner></Banner>
-      <div className="max-w-6xl mx-auto my-5">
+      <div className="max-w-6xl mx-auto py-5">
         <section className="mb-4">
           <SectionTitle heading={"Popular Classes"}></SectionTitle>
           <Popular></Popular>
