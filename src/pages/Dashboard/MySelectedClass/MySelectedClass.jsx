@@ -9,6 +9,7 @@ const MySelectedClass = () => {
 
   const handleDelete = (item) => {
     // console.log(item);
+
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -20,7 +21,7 @@ const MySelectedClass = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(
-          `https://summer-camp-school-server-bajlar.vercel.app/${item._id}`,
+          `https://summer-camp-school-server-bajlar.vercel.app/selected/${item._id}`,
           {
             method: "DELETE",
           }
