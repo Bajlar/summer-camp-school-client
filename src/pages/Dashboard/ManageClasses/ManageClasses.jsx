@@ -12,6 +12,7 @@ const ManageClasses = () => {
       <Helmet>
         <title>Cricket academy | Manage Classes</title>
       </Helmet>
+
       <div className="text-center mb-4">
         <p className="text-3xl font-bold">Total Items: {classes.length}</p>
       </div>
