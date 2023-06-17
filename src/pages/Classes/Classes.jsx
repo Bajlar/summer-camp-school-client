@@ -13,8 +13,8 @@ const Classes = () => {
         <title>Cricket academy | Classes</title>
       </Helmet>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {classes.map((classes) => (
-          <SingleClass key={classes._id} classes={classes}></SingleClass>
+        {classes.map((item) => (
+          <SingleClass key={item._id} item={item}></SingleClass>
         ))}
       </div>
     </div>

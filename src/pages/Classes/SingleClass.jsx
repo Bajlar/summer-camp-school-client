@@ -3,16 +3,17 @@ import useAuth from '../../hooks/useAuth';
 import Swal from 'sweetalert2';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-const SingleClass = ({ classes }) => {
-  // console.log(classes);
-  const { _id, className, image, instructorName, price, availableSeats } =
-    classes;
+const SingleClass = ({ item }) => {
+  // console.log(item);
+
+  const { _id, className, image, instructorName, price, availableSeats } = item;
   const { user } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleSelected = (classes) => {
-    // console.log(classes);
+  const handleSelected = (item) => {
+    // console.log(item);
+
     if (user && user?.email) {
       const classItem = {
         classId: _id,
@@ -23,7 +24,7 @@ const SingleClass = ({ classes }) => {
         availableSeats,
         email: user.email,
       };
-      fetch("http://localhost:5000/selected", {
+      fetch("https://summer-camp-school-server-bajlar.vercel.app/selected", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -71,7 +72,7 @@ const SingleClass = ({ classes }) => {
         <p>Available Seats: {availableSeats}</p>
         <div className="card-actions">
           <button
-            onClick={() => handleSelected(classes)}
+            onClick={() => handleSelected(item)}
             className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0"
           >
             Select

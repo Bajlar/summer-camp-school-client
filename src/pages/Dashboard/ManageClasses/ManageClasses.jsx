@@ -1,7 +1,7 @@
-import React from 'react';
-import useClasses from '../../../hooks/useClasses';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import React from "react";
+import useClasses from "../../../hooks/useClasses";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const ManageClasses = () => {
   const [classes] = useClasses();

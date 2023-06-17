@@ -1,16 +1,22 @@
 import { useQuery } from "@tanstack/react-query";
+import useAuth from "./useAuth";
 
 const useSelectedClass = () => {
+  const { user } = useAuth();
+  // console.log(user);
+
    const {
      data: selected = [],
      refetch,
      isLoading: loading,
    } = useQuery({
      queryKey: ["selected"],
-     queryFn: async () => {
-       const res = await fetch("http://localhost:5000/selected");
-       return res.json();
-     },
+      queryFn: async () => {
+        const res = await fetch(
+          `https://summer-camp-school-server-bajlar.vercel.app/selected/${user?.email}`
+        );
+        return res.json();
+      },
    });
 
    return [selected, refetch, loading];

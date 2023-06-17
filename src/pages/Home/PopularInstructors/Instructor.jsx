@@ -12,11 +12,6 @@ const Instructor = ({ item }) => {
         <h2 className="card-title">Instructor Name: {name}</h2>
         <h3 className="">Class Name: {className}</h3>
         <p>Activities: {activities}</p>
-        {/* <div className="card-actions">
-          <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0">
-            See Classes
-          </button>
-        </div> */}
       </div>
     </div>
   );

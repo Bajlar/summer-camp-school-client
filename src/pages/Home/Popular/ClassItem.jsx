@@ -22,7 +22,7 @@ const ClassItem = ({ item }) => {
         availableSeats,
         email: user.email,
       };
-      fetch("http://localhost:5000/selected", {
+      fetch("https://summer-camp-school-server-bajlar.vercel.app/selected", {
         method: "POST",
         headers: {
           "content-type": "application/json",

@@ -19,17 +19,18 @@ const MySelectedClass = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/selected/${item._id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://summer-camp-school-server-bajlar.vercel.app/${item._id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             // console.log(data);
             refetch();
             if (data.deletedCount === 1) {
               Swal.fire("Deleted!", "Your file has been deleted.", "success");
-              // const remaining = selected.filter((p) => p._id !== _id);
-              // setSelected(remaining);
             }
           });
       }

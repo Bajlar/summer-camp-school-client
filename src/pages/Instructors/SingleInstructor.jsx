@@ -12,11 +12,6 @@ const SingleInstructor = ({ instructor }) => {
       <div className="card-body items-center text-center">
         <h2 className="card-title">Name: {name}</h2>
         <p>Email: {email}</p>
-        {/* <div className="card-actions">
-          <button className="btn text-lg text-white bg-[#04AA6D] hover:bg-[#04AA6D] capitalize border-0">
-            See Classes
-          </button>
-        </div> */}
       </div>
     </div>
   );
